@@ -1,0 +1,7 @@
+/// \dir Utils 
+/// \brief GAMBIT utility tools
+/// 
+/// General utility functions, macros, classes, etc. for use
+/// anywhere in GAMBIT. Try to keep them as independent as
+/// possible so that e.g. standalone executables can link to
+/// just some subset of these utilities if desired. 
