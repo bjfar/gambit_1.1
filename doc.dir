@@ -1,5 +1,3 @@
-/// \dir gambit_1.1 
+/// \dir 
 /// \brief Root of GAMBIT source tree
 /// 
-/// It sucks a bit to have to name this directory since we vary the name
-/// Can autogenerate this small piece of documentation though I guess.
