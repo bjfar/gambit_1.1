@@ -1,8 +1,17 @@
 /*!
- \mainpage The Main Page
- \section sec_1 Section 1
- ...section 1 stuff...
- \section sec_2 Section 2
- ... section 2 stuff...
+\mainpage Welcome to the documentation for GAMBIT
+
+\tableofcontents
+
+\if DOXYGEN_SHOULD_SKIP_THIS
+(can't seem to get image resizing to work)
+\imageSize{logo.svg,width:50px}
+\image html images/logo.svg
+\endif
+
+\section sec1 Section 1
+...section 1 stuff...
+\section sec2 Section 2
+... section 2 stuff...
 
 */
