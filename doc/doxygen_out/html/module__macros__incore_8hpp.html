@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>gambit/Elements/include/gambit/Elements/module_macros_incore.hpp file | GAMBIT The Global And Modular BSM Inference Tool</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700,700i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-light+doxygen.compiled.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#cb4b16" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">GAMBIT <span class="m-thin">The Global And Modular BSM Inference Tool</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-dox-search-icon" title="Search" onclick="return showSearch()"><svg viewBox="0 0 16 16">
+          <path d="m6 0c-3.3144 0-6 2.6856-6 6 0 3.3144 2.6856 6 6 6 1.4858 0 2.8463-0.54083 3.8945-1.4355-0.0164 0.33797 0.14734 0.75854 0.5 1.1504l3.2227 3.7891c0.55185 0.6139 1.4517 0.66544 2.002 0.11524 0.55022-0.55022 0.49866-1.4501-0.11524-2.002l-3.7891-3.2246c-0.39184-0.35266-0.81242-0.51469-1.1504-0.5 0.89472-1.0482 1.4355-2.4088 1.4355-3.8945 0-3.3128-2.6856-5.998-6-5.998zm0 1.5625a4.4375 4.4375 0 0 1 4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375-4.4375 4.4375 4.4375 0 0 1 4.4375-4.4375z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-dox-search-icon" title="Search" onclick="return showSearch()"><svg viewBox="0 0 16 16">
+              <path d="m6 0c-3.3144 0-6 2.6856-6 6 0 3.3144 2.6856 6 6 6 1.4858 0 2.8463-0.54083 3.8945-1.4355-0.0164 0.33797 0.14734 0.75854 0.5 1.1504l3.2227 3.7891c0.55185 0.6139 1.4517 0.66544 2.002 0.11524 0.55022-0.55022 0.49866-1.4501-0.11524-2.002l-3.7891-3.2246c-0.39184-0.35266-0.81242-0.51469-1.1504-0.5 0.89472-1.0482 1.4355-2.4088 1.4355-3.8945 0-3.3128-2.6856-5.998-6-5.998zm0 1.5625a4.4375 4.4375 0 0 1 4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375-4.4375 4.4375 4.4375 0 0 1 4.4375-4.4375z"/>
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="dir_94ca2edea75dca24179db378dc32f31d.html">gambit</a>/</span><span class="m-breadcrumb"><a href="dir_36203d5887fc22ecd630b41233ce9fda.html">Elements</a>/</span><span class="m-breadcrumb"><a href="dir_437b942a2ad4d0a192474aa27ce415f4.html">include</a>/</span><span class="m-breadcrumb"><a href="dir_78af0257452a26eab18d0987c35d6268.html">gambit</a>/</span><span class="m-breadcrumb"><a href="dir_4145b072098efc0387c22a8cde80dcc4.html">Elements</a>/</span>module_macros_incore.hpp <span class="m-thin">file</span>
+        </h1>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#defines">Defines</a></li>
+                <li><a href="#tag-registration-macros">Tag-registration macros</a></li>
+                <li><a href="#rollcall-macros-redirection-within-the-core">Rollcall macros (redirection within the Core).</a></li>
+                <li><a href="#actual-in-core-rollcall-macros">Actual in-core rollcall macros</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>Generic observable and likelihood function macro definitions, for inclusion from the Core.</p><p>Note here that <a href="_collider_bit___higgs__rollcall_8hpp.html#aee0cf83ee6d754df700e396da8987f1f" class="m-dox">FUNCTION</a> is the actual module function name, whereas both <a href="_collider_bit___higgs__rollcall_8hpp.html#a99414bf65bb722f6204c37c7a507b92f" class="m-dox">CAPABILITY</a> and all <em>DEPs</em> refer to the abstract physical quantities that functions may provide or require. Thus, the provides() methods expect a quantity input (i.e. corresponding to a <a href="_collider_bit___higgs__rollcall_8hpp.html#a99414bf65bb722f6204c37c7a507b92f" class="m-dox">CAPABILITY</a>), the requires() methods expect a quantity input for the dependency but a function name input (i.e. corresponding to a <a href="_collider_bit___higgs__rollcall_8hpp.html#aee0cf83ee6d754df700e396da8987f1f" class="m-dox">FUNCTION</a>) for the actual dependent function, and all other things operate on the basis of the function name, not the quantity that is calculated.</p><p>Authors (add name and date if you modify):</p><aside class="m-note m-default"><h4>Author</h4><p>Pat Scott (<a href="mailto:patscott@physics.mcgill.ca">patscott@physics.mcgill.ca</a>)</p></aside><aside class="m-note m-default"><h4>Date</h4><p>2012 Nov</p><p>2013,14 Foreverrrrr</p></aside><aside class="m-note m-default"><h4>Author</h4><p>Abram Krislock (<a href="mailto:abram.krislock@fysik.su.se">abram.krislock@fysik.su.se</a>)</p></aside><aside class="m-note m-default"><h4>Date</h4><p>2013 Jan, Feb</p></aside><aside class="m-note m-default"><h4>Author</h4><p>Christoph Weniger (<a href="mailto:c.weniger@uva.nl">c.weniger@uva.nl</a>)</p></aside><aside class="m-note m-default"><h4>Date</h4><p>2013 Jan, Feb, 2014 Jan</p></aside><aside class="m-note m-default"><h4>Author</h4><p>Anders Kvellestad (<a href="mailto:anders.kvellestad@fys.uio.no">anders.kvellestad@fys.uio.no</a>)</p></aside><aside class="m-note m-default"><h4>Date</h4><p>2013 Nov</p></aside>
+        <section id="define-members">
+          <h2><a href="#define-members">Defines</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a4550620feb30f96a06bbc3fd12a378fa" class="m-dox-self" name="a4550620feb30f96a06bbc3fd12a378fa">ALLOW_DUPLICATES_IN_PARAMS_MAP</a></span>
+            </dt>
+            <dd>Change this to 1 if you really don&#x27;t care about parameter clashes.</dd>
+          </dl>
+        </section>
+        <section id="tag-registration-macros">
+          <h2><a href="#tag-registration-macros">Tag-registration macros</a></h2>
+<p>Add a regular tag to the current namespace</p>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#ab8736248e11458cbdb82cbb5bbe404e7" class="m-dox-self" name="ab8736248e11458cbdb82cbb5bbe404e7">ADD_BETAG_IN_CURRENT_NAMESPACE</a>(</span><span class="m-dox-wrap">TAG)</span>
+            </dt>
+            <dd>Add a backend tag to the current namespace.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a958dbf51f957b5b57200a217f194e0ab" class="m-dox-self" name="a958dbf51f957b5b57200a217f194e0ab">ADD_MODEL_TAG_IN_CURRENT_NAMESPACE</a>(</span><span class="m-dox-wrap">TAG)</span>
+            </dt>
+            <dd>Add a backend tag to the current namespace.</dd>
+          </dl>
+        </section>
+        <section id="rollcall-macros-redirection-within-the-core">
+          <h2><a href="#rollcall-macros-redirection-within-the-core">Rollcall macros (redirection within the Core).</a></h2>
+<p>These are called from within rollcall headers in each module to register module functions, their capabilities, return types, dependencies, and backend requirements.</p>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#af4bd70b6b79b5dbc96eb177423fd8781" class="m-dox-self" name="af4bd70b6b79b5dbc96eb177423fd8781">START_MODULE</a></span>
+            </dt>
+            <dd>Registers the current <a href="_collider_bit__rollcall_8hpp.html#a2c63ae95fe7c6106ae1ec9c283afa486" class="m-dox">MODULE</a>.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a8171a83100431546898e4c5b8216b414" class="m-dox">START_CAPABILITY</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#aa3ba0cbcfb6565420068a7778ddf9c56" class="m-dox-self" name="aa3ba0cbcfb6565420068a7778ddf9c56">LONG_START_CAPABILITY</a>(</span><span class="m-dox-wrap">MODULE,
+              CAPABILITY)</span>
+            </dt>
+            <dd>Long (all argument) version of <a href="module__macros__incore_8hpp.html#a8171a83100431546898e4c5b8216b414" class="m-dox">START_<wbr />CAPABILITY</a>.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#ab1c7cb2e83b1e012e891651f11e2a1fe" class="m-dox">DECLARE_FUNCTION</a>(</span><span class="m-dox-wrap">TYPE,
+              FLAG)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#ab2c240a21c08ae1046d6ec53d06cc0c0" class="m-dox-self" name="ab2c240a21c08ae1046d6ec53d06cc0c0">LONG_DECLARE_FUNCTION</a>(</span><span class="m-dox-wrap">MODULE,
+              CAPABILITY,
+              FUNCTION,
+              TYPE,
+              FLAG)</span>
+            </dt>
+            <dd>Long (all argument) version of <a href="module__macros__incore_8hpp.html#ab1c7cb2e83b1e012e891651f11e2a1fe" class="m-dox">DECLARE_<wbr />FUNCTION</a>.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a0f5cb2781d83637c5f5de042fb3a0896" class="m-dox">NEEDS_MANAGER_WITH_CAPABILITY</a>(</span><span class="m-dox-wrap">LOOPMAN)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a6b4d1ca0beaad9490ec178d15c775fef" class="m-dox">DEPENDENCY</a>(</span><span class="m-dox-wrap">DEP,
+              TYPE)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a9e505d3b3e6c5154a73609325111b16a" class="m-dox-self" name="a9e505d3b3e6c5154a73609325111b16a">LONG_DEPENDENCY</a>(</span><span class="m-dox-wrap">MODULE,
+              FUNCTION,
+              DEP,
+              TYPE)</span>
+            </dt>
+            <dd>Long (all argument) version of <a href="module__macros__incore_8hpp.html#a6b4d1ca0beaad9490ec178d15c775fef" class="m-dox">DEPENDENCY</a>.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a47fe1cd82282c103a9ebfcd2a57dde2f" class="m-dox">ALLOWED_MODEL</a>(</span><span class="m-dox-wrap">MODULE,
+              FUNCTION,
+              MODEL)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#ab6323bc703efad7274bde914b0b265b5" class="m-dox">ALLOWED_MODEL_DEPENDENCE</a>(</span><span class="m-dox-wrap">MODULE,
+              FUNCTION,
+              MODEL)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a7e1390bea9543ff21187afe1e55c4112" class="m-dox">ALLOW_MODEL_COMBINATION</a>(</span><span class="m-dox-wrap">...)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a744649941b5289338bd6e58bec67873e" class="m-dox-self" name="a744649941b5289338bd6e58bec67873e">MODEL_GROUP</a>(</span><span class="m-dox-wrap">GROUPNAME,
+              GROUP)</span>
+            </dt>
+            <dd>Define a model GROUP of name GROUPNAME for use with ALLOW_MODEL_COMBINATION.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#aeb2066fa37d90d01f2d407017e941cb6" class="m-dox">DECLARE_BACKEND_REQ</a>(</span><span class="m-dox-wrap">GROUP,
+              REQUIREMENT,
+              TAGS,
+              TYPE,
+              ARGS,
+              IS_VARIABLE)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a1f4a4516729918a92bf901e865e78008" class="m-dox-self" name="a1f4a4516729918a92bf901e865e78008">BE_GROUP</a>(</span><span class="m-dox-wrap">GROUP)</span>
+            </dt>
+            <dd>Declare a backend group, from which one backend requirement must be activated.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a1080475379afb4e5fcc08b2f5c091753" class="m-dox">ACTIVATE_BACKEND_REQ_FOR_MODELS</a>(</span><span class="m-dox-wrap">MODELS,
+              TAGS)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a0761ba4d29c692ada0716491c66d57cb" class="m-dox">BACKEND_OPTION</a>(</span><span class="m-dox-wrap">BACKEND_AND_VERSIONS,
+              TAGS)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#adaa80ad5963ab34fa59056f4d97ffe34" class="m-dox">FORCE_SAME_BACKEND</a>(</span><span class="m-dox-wrap">...)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#af75783a13f0eca324c064867de3c846b" class="m-dox">START_CONDITIONAL_DEPENDENCY</a>(</span><span class="m-dox-wrap">TYPE)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#aaf830909478fef89b333a806e67fe84e" class="m-dox">ACTIVATE_DEP_BE</a>(</span><span class="m-dox-wrap">BACKEND_REQ,
+              BACKEND,
+              VERSTRING)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#acc4ee7ea690ed3dfa9ddb7ac02cd5df3" class="m-dox">ACTIVATE_FOR_MODELS</a>(</span><span class="m-dox-wrap">...)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a500a90d486ecabb9887b0fc4b35d3e1a" class="m-dox-self" name="a500a90d486ecabb9887b0fc4b35d3e1a">MODEL_CONDITIONAL_DEPENDENCY</a>(</span><span class="m-dox-wrap">DEP,
+              TYPE,
+              ...)</span>
+            </dt>
+            <dd>Quick, one-line declaration of model-conditional dependencies.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#af6b17c8bd11dd66f95191ea06a514e76" class="m-dox">CLASSLOAD_NEEDED</a>(</span><span class="m-dox-wrap">BACKEND,
+              VERSION)</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="actual-in-core-rollcall-macros">
+          <h2><a href="#actual-in-core-rollcall-macros">Actual in-core rollcall macros</a></h2>
+<p>These macros do the actual heavy lifting within the rollcall system.</p>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a59bd16c690bf74d78f025324952fa98c" class="m-dox">CORE_START_MODULE</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a1385477074b6397aad30998556f55453" class="m-dox-self" name="a1385477074b6397aad30998556f55453">CORE_START_MODULE_COMMON_MAIN</a>(</span><span class="m-dox-wrap">MODULE)</span>
+            </dt>
+            <dd>Central module definition macro, used by modules and models.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#af6c82f6b08ca513678a113c071f179f3" class="m-dox">CORE_START_CAPABILITY</a>(</span><span class="m-dox-wrap">MODULE,
+              CAPABILITY)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a1c4ef52b7258ab61738c646489d762d7" class="m-dox">CORE_DECLARE_FUNCTION</a>(</span><span class="m-dox-wrap">MODULE,
+              CAPABILITY,
+              FUNCTION,
+              TYPE,
+              FLAG)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#aee125d971ea1b3cbf6f5ca43fab6d977" class="m-dox-self" name="aee125d971ea1b3cbf6f5ca43fab6d977">MAKE_FUNCTOR_MAIN</a>(</span><span class="m-dox-wrap">FUNCTION,
+              TYPE,
+              CAPABILITY,
+              ORIGIN,
+              CAN_MANAGE)</span>
+            </dt>
+            <dd>Main parts of the functor creation.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a1fbe67fe0962cecc67f90a87be2e95a0" class="m-dox">CORE_NEEDS_MANAGER_WITH_CAPABILITY_MAIN</a>(</span><span class="m-dox-wrap">LOOPMAN)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a232a2725b09e524ee4a3026ea80089b1" class="m-dox">DEPENDENCY_COMMON_1</a>(</span><span class="m-dox-wrap">DEP,
+              TYPE,
+              MODULE,
+              FUNCTION)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a232a43bfaea7d7bc0122fedcd1ee0d6d" class="m-dox">DEPENDENCY_COMMON_2</a>(</span><span class="m-dox-wrap">DEP,
+              FUNCTION)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a29b8cc78ac9728a69fa0baa14be7eed9" class="m-dox-self" name="a29b8cc78ac9728a69fa0baa14be7eed9">CORE_DEPENDENCY</a>(</span><span class="m-dox-wrap">DEP,
+              TYPE,
+              MODULE,
+              FUNCTION,
+              IS_MODEL_DEP)</span>
+            </dt>
+            <dd>Redirection of <a href="module__macros__incore_8hpp.html#a6b4d1ca0beaad9490ec178d15c775fef" class="m-dox">DEPENDENCY(DEP, TYPE)</a> when invoked from within the core.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a503da753db394dd024dad8d33dc90a4c" class="m-dox-self" name="a503da753db394dd024dad8d33dc90a4c">CORE_ALLOWED_MODEL</a>(</span><span class="m-dox-wrap">MODULE,
+              FUNCTION,
+              MODEL)</span>
+            </dt>
+            <dd>Redirection of ALLOW_MODEL when invoked from within the core.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a79ce50904b74562ffe3fb14a9140d6f4" class="m-dox-self" name="a79ce50904b74562ffe3fb14a9140d6f4">CORE_ALLOW_MODEL_DEPENDENCE</a>(</span><span class="m-dox-wrap">MODULE,
+              FUNCTION,
+              MODEL)</span>
+            </dt>
+            <dd>Redirection of ALLOW_MODEL_DEPENDENCE when invoked from within the core.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#ab708128e88f092abb2e660bce6a7d657" class="m-dox-self" name="ab708128e88f092abb2e660bce6a7d657">CORE_ALLOWED_MODEL_ARRANGE_DEP</a>(</span><span class="m-dox-wrap">MODULE,
+              FUNCTION,
+              MODEL)</span>
+            </dt>
+            <dd>Set up the dependency on the parameters object of a given model.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a54807af8ac4860009ee34d6716f62f21" class="m-dox-self" name="a54807af8ac4860009ee34d6716f62f21">CORE_ALLOW_MODEL</a>(</span><span class="m-dox-wrap">MODULE,
+              FUNCTION,
+              MODEL)</span>
+            </dt>
+            <dd>Tell the functor that a single model is enough for it to be allowed to run.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#aa9f194445e41c73af4f8c3e90c8e9e64" class="m-dox-self" name="aa9f194445e41c73af4f8c3e90c8e9e64">CORE_ALLOW_MODEL_COMBINATION</a>(</span><span class="m-dox-wrap">MODULE,
+              FUNCTION,
+              COMBO)</span>
+            </dt>
+            <dd>Redirection of ALLOW_MODEL_COMBINATION when invoked from the Core.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a6d430d312ac839c9b29986f325b4c856" class="m-dox-self" name="a6d430d312ac839c9b29986f325b4c856">CORE_MODEL_GROUP</a>(</span><span class="m-dox-wrap">MODULE,
+              FUNCTION,
+              GROUPNAME,
+              GROUP)</span>
+            </dt>
+            <dd>Redirection of MODEL_GROUP when invoked from within the Core.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a4a174266617b5555ca4377359c90e14d" class="m-dox-self" name="a4a174266617b5555ca4377359c90e14d">CORE_BE_GROUP</a>(</span><span class="m-dox-wrap">GROUP)</span>
+            </dt>
+            <dd>Redirection of <a href="module__macros__common_8hpp.html#a80e9237858ed78192dc55b4bdff133b0" class="m-dox">BACKEND_<wbr />GROUP(GROUP)</a> when invoked from within the Core.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a45afbfafa529440f64ef2804f65545b5" class="m-dox">CORE_BACKEND_REQ</a>(</span><span class="m-dox-wrap">MODULE,
+              CAPABILITY,
+              FUNCTION,
+              GROUP,
+              REQUIREMENT,
+              TAGS,
+              TYPE,
+              ARGS,
+              IS_VARIABLE)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a22dbaabb4b87373521567b760c21120b" class="m-dox">CORE_BACKEND_OPTION</a>(</span><span class="m-dox-wrap">BE_AND_VER,
+              TAGS)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a7ab15f678f9f7850ac137d1a9c59af59" class="m-dox-self" name="a7ab15f678f9f7850ac137d1a9c59af59">CORE_FORCE_SAME_BACKEND</a>(</span><span class="m-dox-wrap">...)</span>
+            </dt>
+            <dd>Redirection of <a href="module__macros__incore_8hpp.html#adaa80ad5963ab34fa59056f4d97ffe34" class="m-dox">FORCE_<wbr />SAME_<wbr />BACKEND(TAGS)</a> when invoked from within the core.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a52afde353f367761db2da78a413f1b08" class="m-dox">CORE_START_CONDITIONAL_DEPENDENCY</a>(</span><span class="m-dox-wrap">MODULE,
+              CAPABILITY,
+              FUNCTION,
+              CONDITIONAL_DEPENDENCY,
+              TYPE)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a07e4b57464481693a7dbfd8b245f32be" class="m-dox">CORE_ACTIVATE_DEP_BE</a>(</span><span class="m-dox-wrap">BACKEND_REQ,
+              BACKEND,
+              VERSTRING)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#ad6ea29a93dbbf56939ef801d40026478" class="m-dox-self" name="ad6ea29a93dbbf56939ef801d40026478">CORE_BE_MODEL_RULE</a>(</span><span class="m-dox-wrap">MODELS,
+              TAGS)</span>
+            </dt>
+            <dd>Redirection of ACTIVATE_BACKEND_REQ_FOR_MODELS when invoked from the Core.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#aa078675ffd367df6c76932feff49bc51" class="m-dox">ACTIVATE_DEP_MODEL</a>(</span><span class="m-dox-wrap">MODULE,
+              CAPABILITY,
+              FUNCTION,
+              CONDITIONAL_DEPENDENCY,
+              MODELSTRING)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a6859a64cc5ef7296d48d6f2ccb5e844f" class="m-dox-self" name="a6859a64cc5ef7296d48d6f2ccb5e844f">CORE_CLASSLOAD_NEEDED</a>(</span><span class="m-dox-wrap">BACKEND,
+              VERSTRING)</span>
+            </dt>
+            <dd>Redirection of NEEDS_CLASSES_FROM when invoked from within the Core.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Define documentation</h2>
+          <section class="m-dox-details" id="a8171a83100431546898e4c5b8216b414"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a8171a83100431546898e4c5b8216b414" class="m-dox-self">START_CAPABILITY</a></span>
+            </h3>
+<p>Registers the current <a href="_collider_bit___higgs__rollcall_8hpp.html#a99414bf65bb722f6204c37c7a507b92f" class="m-dox">CAPABILITY</a> of the current <a href="_collider_bit__rollcall_8hpp.html#a2c63ae95fe7c6106ae1ec9c283afa486" class="m-dox">MODULE</a>.</p>
+          </div></section>
+          <section class="m-dox-details" id="ab1c7cb2e83b1e012e891651f11e2a1fe"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#ab1c7cb2e83b1e012e891651f11e2a1fe" class="m-dox-self">DECLARE_FUNCTION</a>(</span><span class="m-dox-wrap">TYPE,
+              FLAG)</span>
+            </h3>
+<p>Registers the current <a href="_collider_bit___higgs__rollcall_8hpp.html#aee0cf83ee6d754df700e396da8987f1f" class="m-dox">FUNCTION</a> of the current <a href="_collider_bit__rollcall_8hpp.html#a2c63ae95fe7c6106ae1ec9c283afa486" class="m-dox">MODULE</a> as a provider of the current <a href="_collider_bit___higgs__rollcall_8hpp.html#a99414bf65bb722f6204c37c7a507b92f" class="m-dox">CAPABILITY</a>, returning a result of type <em>TYPE</em>.</p>
+          </div></section>
+          <section class="m-dox-details" id="a0f5cb2781d83637c5f5de042fb3a0896"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a0f5cb2781d83637c5f5de042fb3a0896" class="m-dox-self">NEEDS_MANAGER_WITH_CAPABILITY</a>(</span><span class="m-dox-wrap">LOOPMAN)</span>
+            </h3>
+<p>Indicates that the current <a href="_collider_bit___higgs__rollcall_8hpp.html#aee0cf83ee6d754df700e396da8987f1f" class="m-dox">FUNCTION</a> of the current <a href="_collider_bit__rollcall_8hpp.html#a2c63ae95fe7c6106ae1ec9c283afa486" class="m-dox">MODULE</a> must be managed by another function (in the same module or another) that calls it from within a loop. That other function must provide capability <em>LOOPMAN</em>.</p>
+          </div></section>
+          <section class="m-dox-details" id="a6b4d1ca0beaad9490ec178d15c775fef"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a6b4d1ca0beaad9490ec178d15c775fef" class="m-dox-self">DEPENDENCY</a>(</span><span class="m-dox-wrap">DEP,
+              TYPE)</span>
+            </h3>
+<p>Indicate that the current <a href="_collider_bit___higgs__rollcall_8hpp.html#aee0cf83ee6d754df700e396da8987f1f" class="m-dox">FUNCTION</a> depends on the presence of another module function that can supply capability <em>DEP</em>, with return type <em>TYPE</em>.</p>
+          </div></section>
+          <section class="m-dox-details" id="a47fe1cd82282c103a9ebfcd2a57dde2f"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a47fe1cd82282c103a9ebfcd2a57dde2f" class="m-dox-self">ALLOWED_MODEL</a>(</span><span class="m-dox-wrap">MODULE,
+              FUNCTION,
+              MODEL)</span>
+            </h3>
+<p>Indicate that the current <a href="_collider_bit___higgs__rollcall_8hpp.html#aee0cf83ee6d754df700e396da8987f1f" class="m-dox">FUNCTION</a> may only be used with specific model <em>MODEL</em>, or combinations given via ALLOW_MODEL_COMBINATION. If both this and ALLOW_MODEL_COMBINATION are absent, all models are allowed, but model parameters will not generally be accessible from within the module funtion.</p>
+          </div></section>
+          <section class="m-dox-details" id="ab6323bc703efad7274bde914b0b265b5"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#ab6323bc703efad7274bde914b0b265b5" class="m-dox-self">ALLOWED_MODEL_DEPENDENCE</a>(</span><span class="m-dox-wrap">MODULE,
+              FUNCTION,
+              MODEL)</span>
+            </h3>
+<p>Indicate that the current <a href="_collider_bit___higgs__rollcall_8hpp.html#aee0cf83ee6d754df700e396da8987f1f" class="m-dox">FUNCTION</a> may be used with a specific model <em>MODEL</em>, but only in combination with others given via ALLOW_MODEL_COMBINATION.</p>
+          </div></section>
+          <section class="m-dox-details" id="a7e1390bea9543ff21187afe1e55c4112"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a7e1390bea9543ff21187afe1e55c4112" class="m-dox-self">ALLOW_MODEL_COMBINATION</a>(</span><span class="m-dox-wrap">...)</span>
+            </h3>
+<p>Indicate that the current <a href="_collider_bit___higgs__rollcall_8hpp.html#aee0cf83ee6d754df700e396da8987f1f" class="m-dox">FUNCTION</a> may only be used with the specific model combination given, with other combinations passed in the same way, or with individual models speficied via <a href="module__macros__common_8hpp.html#ad58e7a70670e9d0d4b44e430e119910a" class="m-dox">ALLOW_<wbr />MODEL(S)</a>. If both this and <a href="module__macros__common_8hpp.html#ad58e7a70670e9d0d4b44e430e119910a" class="m-dox">ALLOW_<wbr />MODEL(s)</a> are absent, all models are allowed but no model parameters will be accessible from within the module funtion.</p>
+          </div></section>
+          <section class="m-dox-details" id="aeb2066fa37d90d01f2d407017e941cb6"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#aeb2066fa37d90d01f2d407017e941cb6" class="m-dox-self">DECLARE_BACKEND_REQ</a>(</span><span class="m-dox-wrap">GROUP,
+              REQUIREMENT,
+              TAGS,
+              TYPE,
+              ARGS,
+              IS_VARIABLE)</span>
+            </h3>
+<p>BACKEND_REQ indicates that the current <a href="_collider_bit___higgs__rollcall_8hpp.html#aee0cf83ee6d754df700e396da8987f1f" class="m-dox">FUNCTION</a> requires one backend variable or function to be available from a capability group <em>GROUP</em>, and then declares a viable member of that group, with capability <em>REQUIREMENT</em>, type <em>TYPE</em> and (in the case of functions) arguments <em>ARGS</em>. BACKEND_REQ also allows the user to specify a list of <em>TAGS</em> that apply to this specific group member, which can then be used for easily implementing rules for choosing between different members of the same <em>GROUP</em>. Note that <em>GROUPs</em> are automatically declared the first time that they are mentioned in a BACKEND_REQ statement.</p>
+          </div></section>
+          <section class="m-dox-details" id="a1080475379afb4e5fcc08b2f5c091753"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a1080475379afb4e5fcc08b2f5c091753" class="m-dox-self">ACTIVATE_BACKEND_REQ_FOR_MODELS</a>(</span><span class="m-dox-wrap">MODELS,
+              TAGS)</span>
+            </h3>
+<p>Define a rule that uses TAGS to determine which backend requirements of the current <a href="_collider_bit___higgs__rollcall_8hpp.html#aee0cf83ee6d754df700e396da8987f1f" class="m-dox">FUNCTION</a> are explicitly activated when one or more models from the set MODELS are being scanned. Declaring this rule makes backend requirements that match one or more TAGS conditional on the model being scanned. Backend requirements that do not match any such rule are considered unconditional, and are activated regardless of the model(s) being scanned. Note that all rules have <em>immediate</em> effect, so only apply to BACKEND_REQs of the current FUNCTION that have already been declared!</p>
+          </div></section>
+          <section class="m-dox-details" id="a0761ba4d29c692ada0716491c66d57cb"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a0761ba4d29c692ada0716491c66d57cb" class="m-dox-self">BACKEND_OPTION</a>(</span><span class="m-dox-wrap">BACKEND_AND_VERSIONS,
+              TAGS)</span>
+            </h3>
+<p>Define a rule that uses TAGS to determine a set of backend requirements of the current <a href="_collider_bit___higgs__rollcall_8hpp.html#aee0cf83ee6d754df700e396da8987f1f" class="m-dox">FUNCTION</a> that are permitted to be fulfilled by the indicated BACKEND_AND_VERSIONS. If no versions are given, all versions of the stated backend are considered allowed. Declaring this rule makes all backend requirements that match the rule resolvable <em>only</em> by the backend-version pairs passed into <a href="module__macros__incore_8hpp.html#a0761ba4d29c692ada0716491c66d57cb" class="m-dox">BACKEND_<wbr />OPTION</a>. Additional options provided by subsequent calls to <a href="module__macros__incore_8hpp.html#a0761ba4d29c692ada0716491c66d57cb" class="m-dox">BACKEND_<wbr />OPTION</a> are added to the options provided by each previous declaration. In the case of multiple contradictory calls to <a href="module__macros__incore_8hpp.html#a0761ba4d29c692ada0716491c66d57cb" class="m-dox">BACKEND_<wbr />OPTION</a>, the rule defined by the latest call takes precedence. Note that all rules have <em>immediate</em> effect, so only apply to BACKEND_REQs of the current FUNCTION that have already been declared!</p>
+          </div></section>
+          <section class="m-dox-details" id="adaa80ad5963ab34fa59056f4d97ffe34"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#adaa80ad5963ab34fa59056f4d97ffe34" class="m-dox-self">FORCE_SAME_BACKEND</a>(</span><span class="m-dox-wrap">...)</span>
+            </h3>
+<p>Define a rule that certain sets of backend requirements need to be resolved by the same backend. The sets are identified by tags, any number of which can be passed to FORCE_SAME_BACKEND. All backend requirements with a given tag passed into FORCE_SAME_BACKEND will be forced by the dependency resolver to use functions from the same backend. Note that all rules have <em>immediate</em> effect, so only apply to BACKEND_REQs of the current FUNCTION that have already been declared!</p>
+          </div></section>
+          <section class="m-dox-details" id="af75783a13f0eca324c064867de3c846b"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#af75783a13f0eca324c064867de3c846b" class="m-dox-self">START_CONDITIONAL_DEPENDENCY</a>(</span><span class="m-dox-wrap">TYPE)</span>
+            </h3>
+<p>Indicate that the current <a href="_collider_bit___higgs__rollcall_8hpp.html#aee0cf83ee6d754df700e396da8987f1f" class="m-dox">FUNCTION</a> may depend on the presence of another module function that can supply capability <a href="_dark_bit__rollcall_8hpp.html#a0a2c1c9dc69b1048ddca06fb58542b86" class="m-dox">CONDITIONAL_<wbr />DEPENDENCY</a>, with return type <em>TYPE</em>.</p>
+          </div></section>
+          <section class="m-dox-details" id="aaf830909478fef89b333a806e67fe84e"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#aaf830909478fef89b333a806e67fe84e" class="m-dox-self">ACTIVATE_DEP_BE</a>(</span><span class="m-dox-wrap">BACKEND_REQ,
+              BACKEND,
+              VERSTRING)</span>
+            </h3>
+<p>Indicate that the current <a href="_dark_bit__rollcall_8hpp.html#a0a2c1c9dc69b1048ddca06fb58542b86" class="m-dox">CONDITIONAL_<wbr />DEPENDENCY</a> should be activated if the backend requirement <em>BACKEND_REQ</em> of the current <a href="_collider_bit___higgs__rollcall_8hpp.html#aee0cf83ee6d754df700e396da8987f1f" class="m-dox">FUNCTION</a> is filled by a backend function from <em>BACKEND</em>. The versions of <em>BACKEND</em> that this applies to are passed in <em>VERSTRING</em>.</p>
+          </div></section>
+          <section class="m-dox-details" id="acc4ee7ea690ed3dfa9ddb7ac02cd5df3"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#acc4ee7ea690ed3dfa9ddb7ac02cd5df3" class="m-dox-self">ACTIVATE_FOR_MODELS</a>(</span><span class="m-dox-wrap">...)</span>
+            </h3>
+<p>Indicate that the current <a href="_dark_bit__rollcall_8hpp.html#a0a2c1c9dc69b1048ddca06fb58542b86" class="m-dox">CONDITIONAL_<wbr />DEPENDENCY</a> should be activated if the model being scanned matches one of the models passed as an argument.</p>
+          </div></section>
+          <section class="m-dox-details" id="af6b17c8bd11dd66f95191ea06a514e76"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#af6b17c8bd11dd66f95191ea06a514e76" class="m-dox-self">CLASSLOAD_NEEDED</a>(</span><span class="m-dox-wrap">BACKEND,
+              VERSION)</span>
+            </h3>
+<p>Indicate that the current <a href="_collider_bit___higgs__rollcall_8hpp.html#aee0cf83ee6d754df700e396da8987f1f" class="m-dox">FUNCTION</a> requires classes that must be loaded from <em>BACKEND</em>, version <em>VERSION</em>.</p>
+          </div></section>
+          <section class="m-dox-details" id="a59bd16c690bf74d78f025324952fa98c"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a59bd16c690bf74d78f025324952fa98c" class="m-dox-self">CORE_START_MODULE</a></span>
+            </h3>
+<p>Redirection of <a href="module__macros__incore_8hpp.html#af4bd70b6b79b5dbc96eb177423fd8781" class="m-dox">START_<wbr />MODULE</a> when invoked from within the core.</p>
+          </div></section>
+          <section class="m-dox-details" id="af6c82f6b08ca513678a113c071f179f3"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#af6c82f6b08ca513678a113c071f179f3" class="m-dox-self">CORE_START_CAPABILITY</a>(</span><span class="m-dox-wrap">MODULE,
+              CAPABILITY)</span>
+            </h3>
+<p>Redirection of <a href="module__macros__incore_8hpp.html#a8171a83100431546898e4c5b8216b414" class="m-dox">START_<wbr />CAPABILITY</a> when invoked from within the core.</p>
+          </div></section>
+          <section class="m-dox-details" id="a1c4ef52b7258ab61738c646489d762d7"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a1c4ef52b7258ab61738c646489d762d7" class="m-dox-self">CORE_DECLARE_FUNCTION</a>(</span><span class="m-dox-wrap">MODULE,
+              CAPABILITY,
+              FUNCTION,
+              TYPE,
+              FLAG)</span>
+            </h3>
+<p>Redirection of <a href="module__macros__common_8hpp.html#a8a1071840fe03a05dccf3e8257f4b331" class="m-dox">START_<wbr />FUNCTION</a> when invoked from within the core.</p>
+          </div></section>
+          <section class="m-dox-details" id="a1fbe67fe0962cecc67f90a87be2e95a0"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a1fbe67fe0962cecc67f90a87be2e95a0" class="m-dox-self">CORE_NEEDS_MANAGER_WITH_CAPABILITY_MAIN</a>(</span><span class="m-dox-wrap">LOOPMAN)</span>
+            </h3>
+<p>Main redirection of <a href="module__macros__incore_8hpp.html#a0f5cb2781d83637c5f5de042fb3a0896" class="m-dox">NEEDS_<wbr />MANAGER_<wbr />WITH_<wbr />CAPABILITY(LOOPMAN)</a> when invoked from within the core.</p>
+          </div></section>
+          <section class="m-dox-details" id="a232a2725b09e524ee4a3026ea80089b1"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a232a2725b09e524ee4a3026ea80089b1" class="m-dox-self">DEPENDENCY_COMMON_1</a>(</span><span class="m-dox-wrap">DEP,
+              TYPE,
+              MODULE,
+              FUNCTION)</span>
+            </h3>
+<p>First common component of <a href="module__macros__incore_8hpp.html#a29b8cc78ac9728a69fa0baa14be7eed9" class="m-dox">CORE_<wbr />DEPENDENCY(DEP, TYPE, MODULE, FUNCTION)</a> and <a href="module__macros__incore_8hpp.html#a52afde353f367761db2da78a413f1b08" class="m-dox">CORE_<wbr />START_<wbr />CONDITIONAL_<wbr />DEPENDENCY(TYPE)</a>.</p>
+          </div></section>
+          <section class="m-dox-details" id="a232a43bfaea7d7bc0122fedcd1ee0d6d"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a232a43bfaea7d7bc0122fedcd1ee0d6d" class="m-dox-self">DEPENDENCY_COMMON_2</a>(</span><span class="m-dox-wrap">DEP,
+              FUNCTION)</span>
+            </h3>
+<p>Second common component of <a href="module__macros__incore_8hpp.html#a29b8cc78ac9728a69fa0baa14be7eed9" class="m-dox">CORE_<wbr />DEPENDENCY(DEP, TYPE, MODULE, FUNCTION)</a> and <a href="module__macros__incore_8hpp.html#a52afde353f367761db2da78a413f1b08" class="m-dox">CORE_<wbr />START_<wbr />CONDITIONAL_<wbr />DEPENDENCY(TYPE)</a>.</p>
+          </div></section>
+          <section class="m-dox-details" id="a45afbfafa529440f64ef2804f65545b5"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a45afbfafa529440f64ef2804f65545b5" class="m-dox-self">CORE_BACKEND_REQ</a>(</span><span class="m-dox-wrap">MODULE,
+              CAPABILITY,
+              FUNCTION,
+              GROUP,
+              REQUIREMENT,
+              TAGS,
+              TYPE,
+              ARGS,
+              IS_VARIABLE)</span>
+            </h3>
+<p>Redirection of BACKEND_REQ(GROUP, REQUIREMENT, (TAGS), TYPE, [(ARGS)]) for declaring backend requirements when invoked from within the Core.</p>
+          </div></section>
+          <section class="m-dox-details" id="a22dbaabb4b87373521567b760c21120b"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a22dbaabb4b87373521567b760c21120b" class="m-dox-self">CORE_BACKEND_OPTION</a>(</span><span class="m-dox-wrap">BE_AND_VER,
+              TAGS)</span>
+            </h3>
+<p>Redirection of <a href="module__macros__incore_8hpp.html#a0761ba4d29c692ada0716491c66d57cb" class="m-dox">BACKEND_<wbr />OPTION(BACKEND_<wbr />AND_<wbr />VERSIONS, TAGS)</a> when invoked from within the core.</p>
+          </div></section>
+          <section class="m-dox-details" id="a52afde353f367761db2da78a413f1b08"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a52afde353f367761db2da78a413f1b08" class="m-dox-self">CORE_START_CONDITIONAL_DEPENDENCY</a>(</span><span class="m-dox-wrap">MODULE,
+              CAPABILITY,
+              FUNCTION,
+              CONDITIONAL_DEPENDENCY,
+              TYPE)</span>
+            </h3>
+<p>Redirection of <a href="module__macros__incore_8hpp.html#af75783a13f0eca324c064867de3c846b" class="m-dox">START_<wbr />CONDITIONAL_<wbr />DEPENDENCY(TYPE)</a> when invoked from within the core.</p>
+          </div></section>
+          <section class="m-dox-details" id="a07e4b57464481693a7dbfd8b245f32be"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a07e4b57464481693a7dbfd8b245f32be" class="m-dox-self">CORE_ACTIVATE_DEP_BE</a>(</span><span class="m-dox-wrap">BACKEND_REQ,
+              BACKEND,
+              VERSTRING)</span>
+            </h3>
+<p>Redirection of <a href="module__macros__incore_8hpp.html#aaf830909478fef89b333a806e67fe84e" class="m-dox">ACTIVATE_<wbr />DEP_<wbr />BE(BACKEND_<wbr />REQ, BACKEND, VERSTRING)</a> when invoked from within the core.</p>
+          </div></section>
+          <section class="m-dox-details" id="aa078675ffd367df6c76932feff49bc51"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#aa078675ffd367df6c76932feff49bc51" class="m-dox-self">ACTIVATE_DEP_MODEL</a>(</span><span class="m-dox-wrap">MODULE,
+              CAPABILITY,
+              FUNCTION,
+              CONDITIONAL_DEPENDENCY,
+              MODELSTRING)</span>
+            </h3>
+<p>Redirection of <a href="module__macros__incore_8hpp.html#acc4ee7ea690ed3dfa9ddb7ac02cd5df3" class="m-dox">ACTIVATE_<wbr />FOR_<wbr />MODELS(MODELSTRING)</a> when invoked from within the core, inside a CONDITIONAL_DEPENDENCY definition.</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-dox-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-dox-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-dox-search-content">
+          <input type="search" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" />
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            Search for symbols, directories, files, pages or modules. You can omit any
+            prefix from the symbol or file path; adding a <code>:</code> or <code>/</code>
+            suffix lists all members of given symbol or directory. Navigate through the
+            list using <span class="m-label m-dim">&darr;</span> and
+            <span class="m-label m-dim">&uarr;</span>, press
+            <span class="m-label m-dim">Enter</span> to go.
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search.js"></script>
+<script src="searchdata.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>GAMBIT The Global And Modular BSM Inference Tool. Created by <a href="http://doxygen.org/">Doxygen</a> 1.8.15 and <a href="http://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

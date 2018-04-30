@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>gambit/Utils/include/gambit/Utils/util_macros.hpp file | GAMBIT The Global And Modular BSM Inference Tool</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700,700i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-light+doxygen.compiled.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#cb4b16" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">GAMBIT <span class="m-thin">The Global And Modular BSM Inference Tool</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-dox-search-icon" title="Search" onclick="return showSearch()"><svg viewBox="0 0 16 16">
+          <path d="m6 0c-3.3144 0-6 2.6856-6 6 0 3.3144 2.6856 6 6 6 1.4858 0 2.8463-0.54083 3.8945-1.4355-0.0164 0.33797 0.14734 0.75854 0.5 1.1504l3.2227 3.7891c0.55185 0.6139 1.4517 0.66544 2.002 0.11524 0.55022-0.55022 0.49866-1.4501-0.11524-2.002l-3.7891-3.2246c-0.39184-0.35266-0.81242-0.51469-1.1504-0.5 0.89472-1.0482 1.4355-2.4088 1.4355-3.8945 0-3.3128-2.6856-5.998-6-5.998zm0 1.5625a4.4375 4.4375 0 0 1 4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375-4.4375 4.4375 4.4375 0 0 1 4.4375-4.4375z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-dox-search-icon" title="Search" onclick="return showSearch()"><svg viewBox="0 0 16 16">
+              <path d="m6 0c-3.3144 0-6 2.6856-6 6 0 3.3144 2.6856 6 6 6 1.4858 0 2.8463-0.54083 3.8945-1.4355-0.0164 0.33797 0.14734 0.75854 0.5 1.1504l3.2227 3.7891c0.55185 0.6139 1.4517 0.66544 2.002 0.11524 0.55022-0.55022 0.49866-1.4501-0.11524-2.002l-3.7891-3.2246c-0.39184-0.35266-0.81242-0.51469-1.1504-0.5 0.89472-1.0482 1.4355-2.4088 1.4355-3.8945 0-3.3128-2.6856-5.998-6-5.998zm0 1.5625a4.4375 4.4375 0 0 1 4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375-4.4375 4.4375 4.4375 0 0 1 4.4375-4.4375z"/>
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="dir_94ca2edea75dca24179db378dc32f31d.html">gambit</a>/</span><span class="m-breadcrumb"><a href="dir_2cccc5c044872342decafb8f52d8f07a.html">Utils</a>/</span><span class="m-breadcrumb"><a href="dir_b1b057b16a3cb7b7be2265869e17ff8e.html">include</a>/</span><span class="m-breadcrumb"><a href="dir_16a4caf6e526e87d88c2bf5aba8fc0d8.html">gambit</a>/</span><span class="m-breadcrumb"><a href="dir_9c27e4b0b4514fd06ecba61148936274.html">Utils</a>/</span>util_macros.hpp <span class="m-thin">file</span>
+        </h1>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#defines">Defines</a></li>
+                <li><a href="#bottom-level-definition-checking-macros">Bottom-level definition-checking macros</a></li>
+                <li><a href="#high-level-definition-checking-macros">High-level definition-checking macros.</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>General small utility macros.</p><p>Authors:</p><aside class="m-note m-default"><h4>Author</h4><p>Pat Scott<br />(<a href="mailto:patscott@physics.mcgill.ca">patscott@physics.mcgill.ca</a>)</p></aside><aside class="m-note m-default"><h4>Date</h4><p>2013 Apr, Oct</p><p>2014 Mar</p></aside>
+        <section id="define-members">
+          <h2><a href="#define-members">Defines</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a79d93d800c939baa6307060d6dbf891c" class="m-dox">BRACED_INIT_LIST</a>(</span><span class="m-dox-wrap">...)</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="bottom-level-definition-checking-macros">
+          <h2><a href="#bottom-level-definition-checking-macros">Bottom-level definition-checking macros</a></h2>
+<p>Generic macros that can be used from within other macros to test whether or not some other macro is defined. To count as &quot;defined&quot; for the purposes of these macros, there must exist a macro definition of the following form: <code class="m-code"><span class="cp">#define DEFINED_FOO ()</span></code> If this definition exists, <a href="util__macros_8hpp.html#a2d032d2e72f46b17eafdaa9b1908032b" class="m-dox">DEFINED(FOO)</a> will return 1. It is up to you to actually create a matching macro FOO when you create DEFINED_FOO, and then do something with the information that DEFINED provides about the existence of DEFINED_FOO (and presumably also FOO).</p><p>Typically these macros would be used to switch behaviour on a flag passed to a macro. See <a href="module__macros__common_8hpp.html#a8a1071840fe03a05dccf3e8257f4b331" class="m-dox">START_<wbr />FUNCTION</a> in <a href="module__macros__common_8hpp.html" class="m-dox">module_<wbr />macros_<wbr />common.hpp</a> for a detailed worked example.</p>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a2d032d2e72f46b17eafdaa9b1908032b" class="m-dox">DEFINED</a>(</span><span class="m-dox-wrap">NAME)</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="high-level-definition-checking-macros">
+          <h2><a href="#high-level-definition-checking-macros">High-level definition-checking macros.</a></h2>
+<p>These are just nice wrappers around <a href="util__macros_8hpp.html#a2d032d2e72f46b17eafdaa9b1908032b" class="m-dox">DEFINED</a> for specific logical cases.</p>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#aaa8f22797c776ea2eb4c3c574f16f9eb" class="m-dox-self" name="aaa8f22797c776ea2eb4c3c574f16f9eb">IF_DEFINED</a>(</span><span class="m-dox-wrap">NAME,
+              ACTION)</span>
+            </dt>
+            <dd>Do ACTION if NAME is defined.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a86ef3fc87a169b1ce31babc4fe94588d" class="m-dox-self" name="a86ef3fc87a169b1ce31babc4fe94588d">IF_NOT_DEFINED</a>(</span><span class="m-dox-wrap">NAME,
+              ACTION)</span>
+            </dt>
+            <dd>Do ACTION if NAME is undefined.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">#define <a href="#a1c9bba03bc5c2c95cd31fce20d3b8843" class="m-dox-self" name="a1c9bba03bc5c2c95cd31fce20d3b8843">IF_ELSE_DEFINED</a>(</span><span class="m-dox-wrap">NAME,
+              IF,
+              ELSE)</span>
+            </dt>
+            <dd>Do IF if NAME is defined, otherwise do ELSE.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Define documentation</h2>
+          <section class="m-dox-details" id="a79d93d800c939baa6307060d6dbf891c"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a79d93d800c939baa6307060d6dbf891c" class="m-dox-self">BRACED_INIT_LIST</a>(</span><span class="m-dox-wrap">...)</span>
+            </h3>
+<p>Macro for defining a static const vector easily. With C++11 could use initialiser lists, but this is not available in all the compilers we want to support. Use this as a replacement. e.g. static const std::vector&lt;int&gt; myvector = {1,2,3,4}; // Not possible in all compilers we support. becomes <a href="util__macros_8hpp.html#a75dbd33267487c41e78ef441919725a0" class="m-dox">MAKE_<wbr />STATIC_<wbr />VECTOR(int,myvector,(1,2,3,4))</a></p>
+          </div></section>
+          <section class="m-dox-details" id="a2d032d2e72f46b17eafdaa9b1908032b"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">#define <a href="#a2d032d2e72f46b17eafdaa9b1908032b" class="m-dox-self">DEFINED</a>(</span><span class="m-dox-wrap">NAME)</span>
+            </h3>
+<p>Returns 1 or 0 depending on whether a corresponding DEFINED_&lt;NAME&gt; () macro has been <code class="m-code"><span class="cp">#defined</span></code> or not.</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-dox-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-dox-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-dox-search-content">
+          <input type="search" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" />
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            Search for symbols, directories, files, pages or modules. You can omit any
+            prefix from the symbol or file path; adding a <code>:</code> or <code>/</code>
+            suffix lists all members of given symbol or directory. Navigate through the
+            list using <span class="m-label m-dim">&darr;</span> and
+            <span class="m-label m-dim">&uarr;</span>, press
+            <span class="m-label m-dim">Enter</span> to go.
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search.js"></script>
+<script src="searchdata.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>GAMBIT The Global And Modular BSM Inference Tool. Created by <a href="http://doxygen.org/">Doxygen</a> 1.8.15 and <a href="http://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

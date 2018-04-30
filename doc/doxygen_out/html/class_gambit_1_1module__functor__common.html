@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gambit::module_functor_common class | GAMBIT The Global And Modular BSM Inference Tool</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700,700i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-light+doxygen.compiled.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#cb4b16" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">GAMBIT <span class="m-thin">The Global And Modular BSM Inference Tool</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-dox-search-icon" title="Search" onclick="return showSearch()"><svg viewBox="0 0 16 16">
+          <path d="m6 0c-3.3144 0-6 2.6856-6 6 0 3.3144 2.6856 6 6 6 1.4858 0 2.8463-0.54083 3.8945-1.4355-0.0164 0.33797 0.14734 0.75854 0.5 1.1504l3.2227 3.7891c0.55185 0.6139 1.4517 0.66544 2.002 0.11524 0.55022-0.55022 0.49866-1.4501-0.11524-2.002l-3.7891-3.2246c-0.39184-0.35266-0.81242-0.51469-1.1504-0.5 0.89472-1.0482 1.4355-2.4088 1.4355-3.8945 0-3.3128-2.6856-5.998-6-5.998zm0 1.5625a4.4375 4.4375 0 0 1 4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375-4.4375 4.4375 4.4375 0 0 1 4.4375-4.4375z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-dox-search-icon" title="Search" onclick="return showSearch()"><svg viewBox="0 0 16 16">
+              <path d="m6 0c-3.3144 0-6 2.6856-6 6 0 3.3144 2.6856 6 6 6 1.4858 0 2.8463-0.54083 3.8945-1.4355-0.0164 0.33797 0.14734 0.75854 0.5 1.1504l3.2227 3.7891c0.55185 0.6139 1.4517 0.66544 2.002 0.11524 0.55022-0.55022 0.49866-1.4501-0.11524-2.002l-3.7891-3.2246c-0.39184-0.35266-0.81242-0.51469-1.1504-0.5 0.89472-1.0482 1.4355-2.4088 1.4355-3.8945 0-3.3128-2.6856-5.998-6-5.998zm0 1.5625a4.4375 4.4375 0 0 1 4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375-4.4375 4.4375 4.4375 0 0 1 4.4375-4.4375z"/>
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespace_gambit.html">Gambit</a>::</span>module_functor_common <span class="m-thin">class</span>
+        </h1>
+        <p>Functor derived class for module functions.</p>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#base-classes">Base classes</a></li>
+                <li><a href="#derived-classes">Derived classes</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+                <li><a href="#pro-methods">Protected functions</a></li>
+                <li><a href="#pro-attribs">Protected variables</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <section id="base-classes">
+          <h2><a href="#base-classes">Base classes</a></h2>
+          <dl class="m-dox">
+            <dt>
+              class <a href="class_gambit_1_1functor.html" class="m-dox">functor</a>
+            </dt>
+            <dd>Function wrapper (functor) base class.</dd>
+          </dl>
+        </section>
+        <section id="derived-classes">
+          <h2><a href="#derived-classes">Derived classes</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <div class="m-dox-template">template&lt;typename TYPE&gt;</div>
+              class <a href="class_gambit_1_1module__functor.html" class="m-dox">module_functor</a>
+            </dt>
+            <dd>Actual module functor type for all but TYPE=void.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;&gt;</div>
+              class <a href="class_gambit_1_1module__functor_3_01void_01_4.html" class="m-dox">module_functor&lt;void&gt;</a>
+            </dt>
+            <dd>Actual module functor type for TYPE=void.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename TYPE&gt;</div>
+              class <a href="class_gambit_1_1module__functor.html" class="m-dox">module_functor</a>
+            </dt>
+            <dd>Actual module functor type for all but TYPE=void.</dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#a3f6b2f655ca81171249e9f3655825a34" class="m-dox-self" name="a3f6b2f655ca81171249e9f3655825a34">module_functor_common</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="class_gambit_1_1_models_1_1_model_functor_claw.html" class="m-dox">Models::<wbr />ModelFunctorClaw</a>&amp;)</span>
+            </dt>
+            <dd>Constructor.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#af7b89032cf7c7392bb9566609b699f4f" class="m-dox-self" name="af7b89032cf7c7392bb9566609b699f4f">~module_functor_common</a>(</span><span class="m-dox-wrap">) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Destructor.</dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a7f4ecc772af822e6bddf9edf95ab2a5f" class="m-dox-self" name="a7f4ecc772af822e6bddf9edf95ab2a5f">getRuntimeAverage</a>(</span><span class="m-dox-wrap">) -&gt; <a href="_spec_bit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for averaged runtime.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a4e34fc2cf2c9932a6794eb9baf554e28" class="m-dox">reset</a>(</span><span class="m-dox-wrap">) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Reset functor.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a946e0a1ad997d417dd40160a3bba603b" class="m-dox-self" name="a946e0a1ad997d417dd40160a3bba603b">notifyOfInvalidation</a>(</span><span class="m-dox-wrap">const <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&amp;) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Tell the functor that it invalidated the current point in model space, pass a message explaining why, and throw an exception.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#abfa224375716da6b911f18e8cbe72ce7" class="m-dox-self" name="abfa224375716da6b911f18e8cbe72ce7">getInvalidationRate</a>(</span><span class="m-dox-wrap">) -&gt; <a href="_spec_bit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for invalidation rate.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a80654414bb5bb5ae82f6fc37080dc858" class="m-dox-self" name="a80654414bb5bb5ae82f6fc37080dc858">setFadeRate</a>(</span><span class="m-dox-wrap"><a href="_spec_bit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a>) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Setter for the fade rate.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ac689bbfda7429204bc0e07a547116e11" class="m-dox-self" name="ac689bbfda7429204bc0e07a547116e11">setTimingPrintRequirement</a>(</span><span class="m-dox-wrap">bool) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Setter for indicating if the timing data for this function&#x27;s execution should be printed.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a834e0932dcd86d0ad0a19d30a83e74cd" class="m-dox-self" name="a834e0932dcd86d0ad0a19d30a83e74cd">requiresTimingPrinting</a>(</span><span class="m-dox-wrap">) const -&gt; bool <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter indicating if the timing data for this function&#x27;s execution should be printed.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#af6cabe1d2f178ed6560ae1c87802a82f" class="m-dox-self" name="af6cabe1d2f178ed6560ae1c87802a82f">getActiveModelFlag</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>) -&gt; bool</span>
+            </dt>
+            <dd>Indicate whether or not a known model is activated or not.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ae25199af41de21dcb3e20b76233156ec" class="m-dox-self" name="ae25199af41de21dcb3e20b76233156ec">getChosenReqFromGroup</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>) -&gt; <a href="class_gambit_1_1safe__ptr.html" class="m-dox">safe_<wbr />ptr</a>&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt;</span>
+            </dt>
+            <dd>Return a safe pointer to a string indicating which backend requirement has been activated for a given backend group.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a34e131eb232d93687583788c49295a9a" class="m-dox-self" name="a34e131eb232d93687583788c49295a9a">iterate</a>(</span><span class="m-dox-wrap">long long iteration) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Execute a single iteration in the loop managed by this functor.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a1c814da54654e19370708d98bbe07f28" class="m-dox-self" name="a1c814da54654e19370708d98bbe07f28">init_myCurrentIteration_if_NULL</a>(</span><span class="m-dox-wrap">) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Initialise the array holding the current iteration(s) of this functor.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#aea40fae672492b12ab0fe2cd3e270146" class="m-dox-self" name="aea40fae672492b12ab0fe2cd3e270146">setIteration</a>(</span><span class="m-dox-wrap">long long iteration) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Setter for setting the iteration number in the loop in which this functor runs.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a8015da108de37fd11580dbde2537a5b9" class="m-dox-self" name="a8015da108de37fd11580dbde2537a5b9">iterationPtr</a>(</span><span class="m-dox-wrap">) -&gt; <a href="class_gambit_1_1omp__safe__ptr.html" class="m-dox">omp_<wbr />safe_<wbr />ptr</a>&lt;long long&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Return a safe pointer to the iteration number in the loop in which this functor runs.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a3ea59e1326629dfbc1f31a8b2921d6d8" class="m-dox-self" name="a3ea59e1326629dfbc1f31a8b2921d6d8">setCanBeLoopManager</a>(</span><span class="m-dox-wrap">bool canManage) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Setter for specifying whether this is permitted to be a manager functor, which runs other functors nested in a loop.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a45ee081397264cff4fae5d90a468e15c" class="m-dox-self" name="a45ee081397264cff4fae5d90a468e15c">canBeLoopManager</a>(</span><span class="m-dox-wrap">) -&gt; bool <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for revealing whether this is permitted to be a manager functor.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a8e4c91fbf62fda81cfb9abe2fdbc07fa" class="m-dox-self" name="a8e4c91fbf62fda81cfb9abe2fdbc07fa">setLoopManagerCapability</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> cap) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Setter for specifying the capability required of a manager functor, if it is to run this functor nested in a loop.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a76068bbae795db5b319da3b6445b9e0b" class="m-dox-self" name="a76068bbae795db5b319da3b6445b9e0b">loopManagerCapability</a>(</span><span class="m-dox-wrap">) -&gt; <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for revealing the required capability of the wrapped function&#x27;s loop manager.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a744fa740688d36d4e460b09f189b8a1c" class="m-dox-self" name="a744fa740688d36d4e460b09f189b8a1c">loopManagerName</a>(</span><span class="m-dox-wrap">) -&gt; <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for revealing the name of the wrapped function&#x27;s assigned loop manager.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a1b0a360cfb0cd36dbcc2999c55a39537" class="m-dox-self" name="a1b0a360cfb0cd36dbcc2999c55a39537">loopManagerOrigin</a>(</span><span class="m-dox-wrap">) -&gt; <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for revealing the module of the wrapped function&#x27;s assigned loop manager.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a407bb29ab75b62c67df4f9ad8f54c6ac" class="m-dox-self" name="a407bb29ab75b62c67df4f9ad8f54c6ac">breakLoopFromManagedFunctor</a>(</span><span class="m-dox-wrap">) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Tell the manager of the loop in which this functor runs that it is time to break the loop.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a426ba14422f4ec0437347df714aecc81" class="m-dox-self" name="a426ba14422f4ec0437347df714aecc81">loopIsDone</a>(</span><span class="m-dox-wrap">) -&gt; <a href="class_gambit_1_1safe__ptr.html" class="m-dox">safe_<wbr />ptr</a>&lt;bool&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Return a safe pointer to the flag indicating that a loop managed by this functor should break now.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a305b0c7b7932b2bad7439e535263126e" class="m-dox-self" name="a305b0c7b7932b2bad7439e535263126e">resetLoop</a>(</span><span class="m-dox-wrap">) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Provide a way to reset the flag indicating that a loop managed by this functor should break.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a5a6b4098cba80ad8277d6d1a362e702b" class="m-dox-self" name="a5a6b4098cba80ad8277d6d1a362e702b">breakLoop</a>(</span><span class="m-dox-wrap">) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Tell the functor that the loop it manages should break now.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#af4fc9e121a27ea7caf88113de68e2ed2" class="m-dox-self" name="af4fc9e121a27ea7caf88113de68e2ed2">dependencies</a>(</span><span class="m-dox-wrap">) -&gt; std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing currently activated dependencies.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a341556c2227a848fcbb0a80df970e53f" class="m-dox-self" name="a341556c2227a848fcbb0a80df970e53f">backendgroups</a>(</span><span class="m-dox-wrap">) -&gt; std::set&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing backend requirement groups.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a367ffcfd016f5bd30123add599fdb0f7" class="m-dox-self" name="a367ffcfd016f5bd30123add599fdb0f7">backendreqs</a>(</span><span class="m-dox-wrap">) -&gt; std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing all backend requirements.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a30f6ba1e10e57506ee8432019ba35b79" class="m-dox-self" name="a30f6ba1e10e57506ee8432019ba35b79">backendreqs</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>) -&gt; std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing backend requirements from a specific group.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a81378addb3df54c89586340bd2e86187" class="m-dox-self" name="a81378addb3df54c89586340bd2e86187">backendspermitted</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a> quant) -&gt; std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing permitted backends.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a3ee7d48e8177ba02bbeb96c13f513853" class="m-dox-self" name="a3ee7d48e8177ba02bbeb96c13f513853">backendreq_tags</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>) -&gt; std::set&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing tags associated with backend requirements.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ab1b1a8313374971f97ed8a6fde351f56" class="m-dox-self" name="ab1b1a8313374971f97ed8a6fde351f56">forcematchingbackend</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>) -&gt; std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing backend requirements that must be resolved from the same backend.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a15351dd24c1f2efd8d0556dd06741c73" class="m-dox-self" name="a15351dd24c1f2efd8d0556dd06741c73">backend_conditional_dependencies</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> req,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> type,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> be,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> ver) -&gt; std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing backend-specific conditional dependencies (4-string version)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a84713c26691d950b2aaff19bff556763" class="m-dox-self" name="a84713c26691d950b2aaff19bff556763">backend_conditional_dependencies</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> req,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> type,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> be) -&gt; std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for backend-specific conditional dependencies (3-string version)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a9789247dfe146dda5fdcf7c0fe642dab" class="m-dox-self" name="a9789247dfe146dda5fdcf7c0fe642dab">backend_conditional_dependencies</a>(</span><span class="m-dox-wrap"><a href="class_gambit_1_1functor.html" class="m-dox">functor</a>* be_functor) -&gt; std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for backend-specific conditional dependencies (backend functor pointer version)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a27f21017f968237acd5f5ca39521e78a" class="m-dox-self" name="a27f21017f968237acd5f5ca39521e78a">model_conditional_dependencies</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> model) -&gt; std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing model-specific conditional dependencies.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#acba215f7ede05170a577c2c89302c2db" class="m-dox-self" name="acba215f7ede05170a577c2c89302c2db">model_conditional_backend_reqs</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> model) -&gt; std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing model-specific conditional backend requirements.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a43a7ee806e18f22a2de7ed7f012932a4" class="m-dox-self" name="a43a7ee806e18f22a2de7ed7f012932a4">setDependency</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a>(*)(<a href="class_gambit_1_1functor.html" class="m-dox">functor</a>*, <a href="class_gambit_1_1module__functor__common.html" class="m-dox">module_<wbr />functor_<wbr />common</a>*),
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> purpose = &quot;&quot;) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Add and activate unconditional dependencies.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ab61b4bf3795726f0bc6f5d13d703d52f" class="m-dox-self" name="ab61b4bf3795726f0bc6f5d13d703d52f">setBackendConditionalDependency</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a>(*)(<a href="class_gambit_1_1functor.html" class="m-dox">functor</a>*, <a href="class_gambit_1_1module__functor__common.html" class="m-dox">module_<wbr />functor_<wbr />common</a>*)) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Add a backend conditional dependency for multiple backend versions.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a16f6779ed6c35f0c5728c70c66682e97" class="m-dox-self" name="a16f6779ed6c35f0c5728c70c66682e97">setBackendConditionalDependencySingular</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a>(*)(<a href="class_gambit_1_1functor.html" class="m-dox">functor</a>*, <a href="class_gambit_1_1module__functor__common.html" class="m-dox">module_<wbr />functor_<wbr />common</a>*)) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Add a backend conditional dependency for a single backend version.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a724548476661bccb26b7fffee7897903" class="m-dox-self" name="a724548476661bccb26b7fffee7897903">setModelConditionalDependency</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a>(*)(<a href="class_gambit_1_1functor.html" class="m-dox">functor</a>*, <a href="class_gambit_1_1module__functor__common.html" class="m-dox">module_<wbr />functor_<wbr />common</a>*)) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Add a model conditional dependency for multiple models.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a534224723c22fd4e70162d9838372042" class="m-dox-self" name="a534224723c22fd4e70162d9838372042">setModelConditionalDependencySingular</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a>(*)(<a href="class_gambit_1_1functor.html" class="m-dox">functor</a>*, <a href="class_gambit_1_1module__functor__common.html" class="m-dox">module_<wbr />functor_<wbr />common</a>*)) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Add a model conditional dependency for a single model.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a2cd39cd54c4fedb6b5062c62ac9b3885" class="m-dox-self" name="a2cd39cd54c4fedb6b5062c62ac9b3885">makeBackendRuleForModel</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Add a rule for activating backend requirements according to the model being scanned.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a8d5518135253c1ed1065809ce8251778" class="m-dox">setBackendReq</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a>(*)(<a href="class_gambit_1_1functor.html" class="m-dox">functor</a>*)) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ad648bbad10815d3b346c2e51462c5f0c" class="m-dox-self" name="ad648bbad10815d3b346c2e51462c5f0c">setModelConditionalBackendReq</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> model,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> req,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> type) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Add a model conditional backend requirement for multiple models.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#abab01071027dc0b194bc3e76b33a25b3" class="m-dox-self" name="abab01071027dc0b194bc3e76b33a25b3">setModelConditionalBackendReqSingular</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> model,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> req,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> type) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Add a model conditional backend requirement for a single model.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#abda9ce1c6a4f3ec4af244d907bffa30a" class="m-dox-self" name="abda9ce1c6a4f3ec4af244d907bffa30a">makeBackendOptionRule</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Add a rule for dictating which backends can be used to fulfill which backend requirements.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#af3e16680e5820efb26df1c3328190acd" class="m-dox-self" name="af3e16680e5820efb26df1c3328190acd">setPermittedBackend</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> req,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> be,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> ver) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Add a single permitted backend version.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a30700cc6d137ec1773cd9a9359f7f1d0" class="m-dox">makeBackendMatchingRule</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> tag) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Add one or more rules for forcing backends reqs with the same tags to always be resolved from the same backend.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a3d41b15872c55bb8d903b011408dc589" class="m-dox-self" name="a3d41b15872c55bb8d903b011408dc589">setRequiredClassloader</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Add a rule indicating that classes from a given backend must be available.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a39ebf33238e29052273bfb688100bad4" class="m-dox-self" name="a39ebf33238e29052273bfb688100bad4">notifyOfBackends</a>(</span><span class="m-dox-wrap">std::map&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>, std::set&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt;&gt;) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Indicate to the functor which backends are actually loaded and working.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a85031782302fd969c53e48e25424f272" class="m-dox-self" name="a85031782302fd969c53e48e25424f272">setNestedList</a>(</span><span class="m-dox-wrap">std::vector&lt;<a href="class_gambit_1_1functor.html" class="m-dox">functor</a>*&gt;&amp; newNestedList) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Set the ordered list of pointers to other functors that should run nested in a loop managed by this one.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ab4e47058c7c0f72906ece2924d952882" class="m-dox-self" name="ab4e47058c7c0f72906ece2924d952882">resolveDependency</a>(</span><span class="m-dox-wrap"><a href="class_gambit_1_1functor.html" class="m-dox">functor</a>* dep_functor) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Resolve a dependency using a pointer to another functor object.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ab5056f4b47a2c3a79bc44e4293532f07" class="m-dox-self" name="ab5056f4b47a2c3a79bc44e4293532f07">resolveLoopManager</a>(</span><span class="m-dox-wrap"><a href="class_gambit_1_1functor.html" class="m-dox">functor</a>*) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Set this functor&#x27;s loop manager (if it has one)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ae67ace8c39a2c53cb2a158d5bac0ddb4" class="m-dox-self" name="ae67ace8c39a2c53cb2a158d5bac0ddb4">resolveBackendReq</a>(</span><span class="m-dox-wrap"><a href="class_gambit_1_1functor.html" class="m-dox">functor</a>* be_functor) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Resolve a backend requirement using a pointer to another functor object.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a9effd8a4100f67c39c4cd300a027ae22" class="m-dox-self" name="a9effd8a4100f67c39c4cd300a027ae22">notifyOfModel</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> model) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Notify the functor that a certain model is being scanned, so that it can activate its dependencies and backend reqs accordingly.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a6dc067a3fa5774ca0f9eb1dfb67d2d53" class="m-dox-self" name="a6dc067a3fa5774ca0f9eb1dfb67d2d53">retrieve_invalid_point_exception</a>(</span><span class="m-dox-wrap">) -&gt; <a href="class_gambit_1_1invalid__point__exception.html" class="m-dox">invalid_<wbr />point_<wbr />exception</a>* <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Retrieve the previously saved exception generated when this functor invalidated the current point in model space.</dd>
+          </dl>
+        </section>
+        <section id="pro-methods">
+          <h2><a href="#pro-methods">Protected functions</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a716ce66eb5f12e39e9d38c0d5949fe9a" class="m-dox-self" name="a716ce66eb5f12e39e9d38c0d5949fe9a">reset</a>(</span><span class="m-dox-wrap"><a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a>) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Reset functor for one thread only.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a60681b7ecb89f42c1114132f044f4246" class="m-dox-self" name="a60681b7ecb89f42c1114132f044f4246">acknowledgeInvalidation</a>(</span><span class="m-dox-wrap"><a href="class_gambit_1_1invalid__point__exception.html" class="m-dox">invalid_<wbr />point_<wbr />exception</a>&amp;,
+              <a href="class_gambit_1_1functor.html" class="m-dox">functor</a>* f = NULL) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Acknowledge that this functor invalidated the current point in model space.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#aa5b20d0bd820325c61ab0bcfea479a48" class="m-dox-self" name="aa5b20d0bd820325c61ab0bcfea479a48">startTiming</a>(</span><span class="m-dox-wrap"><a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a>) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Do pre-calculate timing things.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a26c95890c3df7e87602e2de30b6d0f6f" class="m-dox-self" name="a26c95890c3df7e87602e2de30b6d0f6f">finishTiming</a>(</span><span class="m-dox-wrap"><a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a>) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Do post-calculate timing things.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a90d617ce75a8ade1c843c3bdaa20c231" class="m-dox-self" name="a90d617ce75a8ade1c843c3bdaa20c231">init_memory</a>(</span><span class="m-dox-wrap">) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Initialise the memory of this functor.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a736a0964bc8a8b518eacc37e4619f3cf" class="m-dox-self" name="a736a0964bc8a8b518eacc37e4619f3cf">fill_activeModelFlags</a>(</span><span class="m-dox-wrap">) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Construct the list of known models only if it doesn&#x27;t yet exist.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ae3a82d20da9f6340c9e00c35d7254b0c" class="m-dox-self" name="ae3a82d20da9f6340c9e00c35d7254b0c">check_missing_LogTag</a>(</span><span class="m-dox-wrap">) -&gt; <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Check if an appropriate LogTag for this functor is missing from the logging system.</dd>
+          </dl>
+        </section>
+        <section id="pro-attribs">
+          <h2><a href="#pro-attribs">Protected variables</a></h2>
+          <dl class="m-dox">
+            <dt>bool <a href="#a7a1adb7a3d6c6868d06025ba45264593" class="m-dox-self" name="a7a1adb7a3d6c6868d06025ba45264593">myTimingPrintFlag</a></dt>
+            <dd>Flag to select whether or not the timing data for this function&#x27;s execution should be printed;.</dd>
+            <dt>std::chrono::time_point&lt;std::chrono::system_clock&gt;* <a href="#aa47b3d140ceec21755b3cf50cffece49" class="m-dox-self" name="aa47b3d140ceec21755b3cf50cffece49">start</a></dt>
+            <dd>Beginning and end timing points.</dd>
+            <dt>bool <a href="#a366392aa6096192a76ee894d68aa85da" class="m-dox-self" name="a366392aa6096192a76ee894d68aa85da">point_exception_raised</a></dt>
+            <dd>A flag indicating whether or not this functor has invalidated the current point.</dd>
+            <dt><a href="class_gambit_1_1invalid__point__exception.html" class="m-dox">invalid_<wbr />point_<wbr />exception</a> <a href="#a85d73ca93af7755cdfc053f015a8cf98" class="m-dox-self" name="a85d73ca93af7755cdfc053f015a8cf98">raised_point_exception</a></dt>
+            <dd>An exception raised because this functor has invalidated the current point.</dd>
+            <dt><a href="_spec_bit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> <a href="#a73113fff7fbc6a32a1c871dc3e688eeb" class="m-dox-self" name="a73113fff7fbc6a32a1c871dc3e688eeb">runtime_average</a></dt>
+            <dd>Averaged runtime in ns.</dd>
+            <dt><a href="_spec_bit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> <a href="#a77c216bbfeb9d09928b3ada8973447c7" class="m-dox-self" name="a77c216bbfeb9d09928b3ada8973447c7">fadeRate</a></dt>
+            <dd>Fade rate for average runtime.</dd>
+            <dt><a href="_spec_bit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> <a href="#a586f59a87b95b5cc43bfa8939d51e71f" class="m-dox-self" name="a586f59a87b95b5cc43bfa8939d51e71f">pInvalidation</a></dt>
+            <dd>Probability that functors invalidates point in model parameter space.</dd>
+            <dt>bool* <a href="#aa948b2e50700e9c0d414090064cbaf35" class="m-dox-self" name="aa948b2e50700e9c0d414090064cbaf35">needs_recalculating</a></dt>
+            <dd>Needs recalculating or not?</dd>
+            <dt>bool* <a href="#a11a55f0dee712fd09143749711bf345d" class="m-dox-self" name="a11a55f0dee712fd09143749711bf345d">already_printed</a></dt>
+            <dd>Has result already been sent to the printer?</dd>
+            <dt>bool* <a href="#ac41e86a381b4cd922e4125e3572c5174" class="m-dox-self" name="ac41e86a381b4cd922e4125e3572c5174">already_printed_timing</a></dt>
+            <dd>Has timing data already been sent to the printer?</dd>
+            <dt>bool <a href="#ac211d5483ebf9d71dcf2bed1cae9781e" class="m-dox-self" name="ac211d5483ebf9d71dcf2bed1cae9781e">iCanManageLoops</a></dt>
+            <dd>Flag indicating whether this function can manage a loop over other functions.</dd>
+            <dt>bool <a href="#a2fc9ca343ed1c197b4c246779bbd52df" class="m-dox-self" name="a2fc9ca343ed1c197b4c246779bbd52df">myLoopIsDone</a></dt>
+            <dd>Flag indicating whether this function is ready to finish its loop (only relevant if iCanManageLoops = true)</dd>
+            <dt>bool <a href="#a0c61f250c2879b7a80e3fbb2b6c6dcff" class="m-dox-self" name="a0c61f250c2879b7a80e3fbb2b6c6dcff">iRunNested</a></dt>
+            <dd>Flag indicating whether this function can run nested in a loop over functions.</dd>
+            <dt><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> <a href="#ae737ea2b40a195003e3eafa08a2e24ac" class="m-dox-self" name="ae737ea2b40a195003e3eafa08a2e24ac">myLoopManagerCapability</a></dt>
+            <dd>Capability of a function that mangages a loop that this function can run inside of.</dd>
+            <dt><a href="class_gambit_1_1functor.html" class="m-dox">functor</a>* <a href="#a8aa8ac184455c66978aba66b88de3344" class="m-dox-self" name="a8aa8ac184455c66978aba66b88de3344">myLoopManager</a></dt>
+            <dd>Pointer to the functor that mangages the loop that this function runs inside of.</dd>
+            <dt>std::vector&lt;<a href="class_gambit_1_1functor.html" class="m-dox">functor</a>*&gt; <a href="#afa8e12fe2b00861c82adcb174328589a" class="m-dox-self" name="afa8e12fe2b00861c82adcb174328589a">myNestedFunctorList</a></dt>
+            <dd>Vector of functors that have been set up to run nested within this one.</dd>
+            <dt>long long* <a href="#a47a97cb3505484092de8e06cd397ba49" class="m-dox-self" name="a47a97cb3505484092de8e06cd397ba49">myCurrentIteration</a></dt>
+            <dd>Pointer to counters for iterations of nested functor loop.</dd>
+            <dt>const <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a> <a href="#a9ab2ee1a2b0d96d437a4c5e6d2cec739" class="m-dox-self" name="a9ab2ee1a2b0d96d437a4c5e6d2cec739">globlMaxThreads</a></dt>
+            <dd>Maximum number of OpenMP threads this MPI process is permitted to launch in total.</dd>
+            <dt>std::set&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt; <a href="#ad34c2ea06524530739b1753e7d06423a" class="m-dox-self" name="ad34c2ea06524530739b1753e7d06423a">myGroups</a></dt>
+            <dd>Internal list of backend groups that this functor&#x27;s requirements fall into.</dd>
+            <dt>std::map&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>, <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt; <a href="#a093c06a4cad21400d4f46c89b6d302b1" class="m-dox-self" name="a093c06a4cad21400d4f46c89b6d302b1">chosenReqsFromGroups</a></dt>
+            <dd>Map from groups to backend reqs, indicating which backend req has been activated for which backend group.</dd>
+            <dt>std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <a href="#a1e9bed0318723d34f73afc954c0d7d05" class="m-dox-self" name="a1e9bed0318723d34f73afc954c0d7d05">myBackendReqs</a></dt>
+            <dd>Set of all backend requirement-type string pairs.</dd>
+            <dt>std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <a href="#a591c7ce963c69d51b331eb69fbe5a4ba" class="m-dox-self" name="a591c7ce963c69d51b331eb69fbe5a4ba">myResolvableBackendReqs</a></dt>
+            <dd>Set of all backend requirement-type string pairs currently available for resolution.</dd>
+            <dt>std::map&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>, std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt;&gt; <a href="#a0b571e85b889da6d7173bae0473b2018" class="m-dox-self" name="a0b571e85b889da6d7173bae0473b2018">myGroupedBackendReqs</a></dt>
+            <dd>Set of backend requirement-type string pairs for specific backend groups.</dd>
+            <dt>std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <a href="#a1d2b89105961ad780787a688bd468432" class="m-dox-self" name="a1d2b89105961ad780787a688bd468432">myDependencies</a></dt>
+            <dd>Vector of dependency-type string pairs.</dd>
+            <dt>std::map&lt;std::vector&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt;, std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt;&gt; <a href="#adc22bfb0f06cf58e6f4469d793d88583" class="m-dox-self" name="adc22bfb0f06cf58e6f4469d793d88583">myBackendConditionalDependencies</a></dt>
+            <dd>Map from (vector with 4 strings: backend req, type, backend, version) to (set of {conditional dependency-type} pairs)</dd>
+            <dt>std::map&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>, std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt;&gt; <a href="#a70be0fd7b2530e87a26e1caac4b400c9" class="m-dox-self" name="a70be0fd7b2530e87a26e1caac4b400c9">myModelConditionalDependencies</a></dt>
+            <dd>Map from models to (set of {conditional dependency-type} pairs)</dd>
+            <dt>std::map&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>, std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt;&gt; <a href="#a24327d20eeb4e07722e81856e5c613d8" class="m-dox-self" name="a24327d20eeb4e07722e81856e5c613d8">myModelConditionalBackendReqs</a></dt>
+            <dd>Map from models to (set of {conditional backend requirement-type} pairs)</dd>
+            <dt>std::map&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>, bool&gt; <a href="#aeb3b1f7a66c83d117342496b6ad0229f" class="m-dox-self" name="aeb3b1f7a66c83d117342496b6ad0229f">activeModelFlags</a></dt>
+            <dd>Map from known models to flags indicating if they are activated or not (known = allowed, in allowed groups or conditions for conditional dependencies)</dd>
+            <dt>std::map&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>, <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a>(*)(<a href="class_gambit_1_1functor.html" class="m-dox">functor</a>*, <a href="class_gambit_1_1module__functor__common.html" class="m-dox">module_<wbr />functor_<wbr />common</a>*)&gt; <a href="#a65b4f950efdaca6b360b131b5b8a0ebf" class="m-dox">dependency_map</a></dt>
+            <dd></dd>
+            <dt>std::map&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>, <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt; <a href="#a786bc4ed0cca65e2c916836740337f17" class="m-dox-self" name="a786bc4ed0cca65e2c916836740337f17">backendreq_types</a></dt>
+            <dd>Map from backend requirements to their required types.</dd>
+            <dt>std::map&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>, <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt; <a href="#ae23abdb30edf89228b296b707bc4321f" class="m-dox-self" name="ae23abdb30edf89228b296b707bc4321f">backendreq_groups</a></dt>
+            <dd>Map from backend requirements to their designated groups.</dd>
+            <dt>std::map&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>, std::set&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt;&gt; <a href="#ad99f3dba2e2045dfddd88a6d9b60e540" class="m-dox-self" name="ad99f3dba2e2045dfddd88a6d9b60e540">backendreq_tagmap</a></dt>
+            <dd>Map from backend requirements to their rule tags.</dd>
+            <dt>std::map&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>, <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a>(*)(<a href="class_gambit_1_1functor.html" class="m-dox">functor</a>*)&gt; <a href="#ae7f6eb5b0b45de63ae3db562420126ed" class="m-dox">backendreq_map</a></dt>
+            <dd></dd>
+            <dt>std::map&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>, std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt;&gt; <a href="#a15ba740d630d04935b9e9e1376bf0b8a" class="m-dox-self" name="a15ba740d630d04935b9e9e1376bf0b8a">permitted_map</a></dt>
+            <dd>Map from (backend requirement-type pairs) to (set of permitted {backend-version} pairs)</dd>
+            <dt>std::map&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>, std::set&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt;&gt; <a href="#a67831f6f58d5b081b2a08a5f7e7c557c" class="m-dox-self" name="a67831f6f58d5b081b2a08a5f7e7c557c">myForcedMatches</a></dt>
+            <dd>Map from tags to sets of matching (backend requirement-type pairs) that are forced to use the same backend.</dd>
+            <dt>std::map&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>, std::set&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt;&gt; <a href="#a2897f00892b6a5470246d1557f251e6b" class="m-dox-self" name="a2897f00892b6a5470246d1557f251e6b">required_classloading_backends</a></dt>
+            <dd>Map from required classloading backends to their versions.</dd>
+            <dt>std::vector&lt;<a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt; <a href="#a0fd8feffa79f12d89097f5c45fc9eb18" class="m-dox-self" name="a0fd8feffa79f12d89097f5c45fc9eb18">missing_backends</a></dt>
+            <dd>Vector of required backends currently missing.</dd>
+            <dt>timespec <a href="#ae819618cc7c2ad5eb32d18464235d40b" class="m-dox-self" name="ae819618cc7c2ad5eb32d18464235d40b">tp</a></dt>
+            <dd>Internal timespec object.</dd>
+            <dt><a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a> <a href="#a9362538d0fec38166b8baabd51272621" class="m-dox-self" name="a9362538d0fec38166b8baabd51272621">myLogTag</a></dt>
+            <dd>Integer LogTag, for tagging log messages.</dd>
+            <dt>bool <a href="#ab3d4cb6d21dd67b058af4e70bc4a4c45" class="m-dox">signal_mode_locked</a></dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-dox-details" id="a4e34fc2cf2c9932a6794eb9baf554e28"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper"><a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> Gambit::<wbr />module_functor_common::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a4e34fc2cf2c9932a6794eb9baf554e28" class="m-dox-self">reset</a>(</span><span class="m-dox-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Reset functor.</p>
+<p>Reset functor for all threads.</p>
+          </div></section>
+          <section class="m-dox-details" id="a8d5518135253c1ed1065809ce8251778"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper"><a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> Gambit::<wbr />module_functor_common::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a8d5518135253c1ed1065809ce8251778" class="m-dox-self">setBackendReq</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a>(*)(<a href="class_gambit_1_1functor.html" class="m-dox">functor</a>*))</span></span>
+            </h3>
+<p>Add an unconditional backend requirement The info gets updated later if this turns out to be contitional on a model.</p><p>Add an unconditional backend requirement The info gets updated later if this turns out to be conditional on a model.</p>
+          </div></section>
+          <section class="m-dox-details" id="a30700cc6d137ec1773cd9a9359f7f1d0"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper"><a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> Gambit::<wbr />module_functor_common::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a30700cc6d137ec1773cd9a9359f7f1d0" class="m-dox-self">makeBackendMatchingRule</a>(</span><span class="m-dox-wrap"><a href="namespace_gambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> tag)</span></span>
+            </h3>
+            <p>Add one or more rules for forcing backends reqs with the same tags to always be resolved from the same backend.</p>
+<p>Add one or more rules that force backends reqs with the same tag to always be resolved from the same backend.</p>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-dox-details" id="a65b4f950efdaca6b360b131b5b8a0ebf"><div>
+            <h3>
+              std::map&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>, <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a>(*)(<a href="class_gambit_1_1functor.html" class="m-dox">functor</a>*, <a href="class_gambit_1_1module__functor__common.html" class="m-dox">module_<wbr />functor_<wbr />common</a>*)&gt; Gambit::<wbr />module_functor_common::<wbr /><a href="#a65b4f950efdaca6b360b131b5b8a0ebf" class="m-dox-self">dependency_map</a> <span class="m-label m-warning">protected</span>
+            </h3>
+<p>Map from (dependency-type pairs) to (pointers to templated void functions that set dependency functor pointers)</p>
+          </div></section>
+          <section class="m-dox-details" id="ae7f6eb5b0b45de63ae3db562420126ed"><div>
+            <h3>
+              std::map&lt;<a href="namespace_gambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>, <a href="_spec_bit___m_s_s_m__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a>(*)(<a href="class_gambit_1_1functor.html" class="m-dox">functor</a>*)&gt; Gambit::<wbr />module_functor_common::<wbr /><a href="#ae7f6eb5b0b45de63ae3db562420126ed" class="m-dox-self">backendreq_map</a> <span class="m-label m-warning">protected</span>
+            </h3>
+<p>Map from (backend requirement-type pairs) to (pointers to templated void functions that set backend requirement functor pointers)</p>
+          </div></section>
+          <section class="m-dox-details" id="ab3d4cb6d21dd67b058af4e70bc4a4c45"><div>
+            <h3>
+              bool Gambit::<wbr />module_functor_common::<wbr /><a href="#ab3d4cb6d21dd67b058af4e70bc4a4c45" class="m-dox-self">signal_mode_locked</a> <span class="m-label m-warning">protected</span>
+            </h3>
+<p>While locked, prevent this function switching off threadsafe* emergency signal handling. *The emergency signal handling cannot be made completely threadsafe; it can still cause lockups and memory corruption if it occurs at an inopportune time. &quot;soft&quot; shutdown is always preferable.</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-dox-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-dox-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-dox-search-content">
+          <input type="search" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" />
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            Search for symbols, directories, files, pages or modules. You can omit any
+            prefix from the symbol or file path; adding a <code>:</code> or <code>/</code>
+            suffix lists all members of given symbol or directory. Navigate through the
+            list using <span class="m-label m-dim">&darr;</span> and
+            <span class="m-label m-dim">&uarr;</span>, press
+            <span class="m-label m-dim">Enter</span> to go.
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search.js"></script>
+<script src="searchdata.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>GAMBIT The Global And Modular BSM Inference Tool. Created by <a href="http://doxygen.org/">Doxygen</a> 1.8.15 and <a href="http://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>
