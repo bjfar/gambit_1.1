@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gambit::functor class | GAMBIT : The Global And Modular BSM Inference Tool</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700,700i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-gambit+doxygen.compiled.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">GAMBIT <span class="m-thin">: The Global And Modular BSM Inference Tool</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-dox-search-icon" title="Search" onclick="return showSearch()"><svg viewBox="0 0 16 16">
+          <path d="m6 0c-3.3144 0-6 2.6856-6 6 0 3.3144 2.6856 6 6 6 1.4858 0 2.8463-0.54083 3.8945-1.4355-0.0164 0.33797 0.14734 0.75854 0.5 1.1504l3.2227 3.7891c0.55185 0.6139 1.4517 0.66544 2.002 0.11524 0.55022-0.55022 0.49866-1.4501-0.11524-2.002l-3.7891-3.2246c-0.39184-0.35266-0.81242-0.51469-1.1504-0.5 0.89472-1.0482 1.4355-2.4088 1.4355-3.8945 0-3.3128-2.6856-5.998-6-5.998zm0 1.5625a4.4375 4.4375 0 0 1 4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375-4.4375 4.4375 4.4375 0 0 1 4.4375-4.4375z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-dox-search-icon" title="Search" onclick="return showSearch()"><svg viewBox="0 0 16 16">
+              <path d="m6 0c-3.3144 0-6 2.6856-6 6 0 3.3144 2.6856 6 6 6 1.4858 0 2.8463-0.54083 3.8945-1.4355-0.0164 0.33797 0.14734 0.75854 0.5 1.1504l3.2227 3.7891c0.55185 0.6139 1.4517 0.66544 2.002 0.11524 0.55022-0.55022 0.49866-1.4501-0.11524-2.002l-3.7891-3.2246c-0.39184-0.35266-0.81242-0.51469-1.1504-0.5 0.89472-1.0482 1.4355-2.4088 1.4355-3.8945 0-3.3128-2.6856-5.998-6-5.998zm0 1.5625a4.4375 4.4375 0 0 1 4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375-4.4375 4.4375 4.4375 0 0 1 4.4375-4.4375z"/>
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespaceGambit.html">Gambit</a>::</span>functor <span class="m-thin">class</span>
+        </h1>
+        <p>Function wrapper (functor) base class.</p>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#derived-classes">Derived classes</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+                <li><a href="#pro-static-methods">Protected static functions</a></li>
+                <li><a href="#pro-methods">Protected functions</a></li>
+                <li><a href="#pro-attribs">Protected variables</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <section id="derived-classes">
+          <h2><a href="#derived-classes">Derived classes</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <div class="m-dox-template">template&lt;typename PTR_TYPE, typename TYPE, typename... ARGS&gt;</div>
+              class <a href="classGambit_1_1backend__functor__common.html" class="m-dox">backend_functor_common</a>
+            </dt>
+            <dd>Backend functor class for functions with result type TYPE and argumentlist ARGS.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename PTR_TYPE, typename TYPE, typename... ARGS&gt;</div>
+              class <a href="classGambit_1_1backend__functor__common.html" class="m-dox">backend_functor_common</a>
+            </dt>
+            <dd>Backend functor class for functions with result type TYPE and argumentlist ARGS.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename PTR_TYPE, typename TYPE, typename... ARGS&gt;</div>
+              class <a href="classGambit_1_1backend__functor__common.html" class="m-dox">backend_functor_common</a>
+            </dt>
+            <dd>Backend functor class for functions with result type TYPE and argumentlist ARGS.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename PTR_TYPE, typename TYPE, typename... ARGS&gt;</div>
+              class <a href="classGambit_1_1backend__functor__common.html" class="m-dox">backend_functor_common</a>
+            </dt>
+            <dd>Backend functor class for functions with result type TYPE and argumentlist ARGS.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename PTR_TYPE, typename TYPE, typename... ARGS&gt;</div>
+              class <a href="classGambit_1_1backend__functor__common.html" class="m-dox">backend_functor_common</a>
+            </dt>
+            <dd>Backend functor class for functions with result type TYPE and argumentlist ARGS.</dd>
+            <dt>
+              class <a href="classGambit_1_1module__functor__common.html" class="m-dox">module_functor_common</a>
+            </dt>
+            <dd>Functor derived class for module functions.</dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#a970d23b026a50dd8b029795a004b4183" class="m-dox-self" name="a970d23b026a50dd8b029795a004b4183">functor</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="classGambit_1_1Models_1_1ModelFunctorClaw.html" class="m-dox">Models::<wbr />ModelFunctorClaw</a>&amp;)</span>
+            </dt>
+            <dd>Constructor.</dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ad4511b7324e416ec8a881bc2d3d7870e" class="m-dox-self" name="ad4511b7324e416ec8a881bc2d3d7870e">calculate</a>(</span><span class="m-dox-wrap">) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Virtual <a href="classGambit_1_1functor.html#ad4511b7324e416ec8a881bc2d3d7870e" class="m-dox">calculate()</a>; needs to be redefined in daughters.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a3fa95b5cde845f17d17fc40fa8e205e5" class="m-dox-self" name="a3fa95b5cde845f17d17fc40fa8e205e5">reset_and_calculate</a>(</span><span class="m-dox-wrap">) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Reset-then-recalculate method.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#aa5b8e133948384570684245abcd0a137" class="m-dox">setStatus</a>(</span><span class="m-dox-wrap"><a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a>) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#af005b2c5a8673df8402c10b7cdf78082" class="m-dox-self" name="af005b2c5a8673df8402c10b7cdf78082">setInUse</a>(</span><span class="m-dox-wrap">bool) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Set the inUse flag (must be overridden in derived class to have any effect).</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a505e1eec8cb10fab9a310cd07ddaa7b2" class="m-dox-self" name="a505e1eec8cb10fab9a310cd07ddaa7b2">setPurpose</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Setter for purpose (relevant only for next-to-output functors)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a662c46ed6b31a1525a983c9cf7ebdf2b" class="m-dox-self" name="a662c46ed6b31a1525a983c9cf7ebdf2b">setVertexID</a>(</span><span class="m-dox-wrap"><a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a>) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Setter for vertex ID (used in printer system)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#aa3672cd13d12ba53572d7b40bb74121e" class="m-dox">setTimingVertexID</a>(</span><span class="m-dox-wrap"><a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a>) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Set ID for timing &#x27;vertex&#x27; (used in printer system)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#aaea7be169ef23d9221b4f85bc52eacb4" class="m-dox-self" name="aaea7be169ef23d9221b4f85bc52eacb4">name</a>(</span><span class="m-dox-wrap">) const -&gt; <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a></span>
+            </dt>
+            <dd>Getter for the wrapped function&#x27;s name.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#abbad0238d51adf088d97fe4376586890" class="m-dox-self" name="abbad0238d51adf088d97fe4376586890">capability</a>(</span><span class="m-dox-wrap">) const -&gt; <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a></span>
+            </dt>
+            <dd>Getter for the wrapped function&#x27;s reported capability.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a913d44680b347e3e9261601b3bdb6f80" class="m-dox-self" name="a913d44680b347e3e9261601b3bdb6f80">type</a>(</span><span class="m-dox-wrap">) const -&gt; <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a></span>
+            </dt>
+            <dd>Getter for the wrapped function&#x27;s reported return type.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a150f27ecb8a2eb9c3739a809dc5b7c83" class="m-dox-self" name="a150f27ecb8a2eb9c3739a809dc5b7c83">origin</a>(</span><span class="m-dox-wrap">) const -&gt; <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a></span>
+            </dt>
+            <dd>Getter for the wrapped function&#x27;s origin (module or backend name)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a876de7e3fb4b6611e0a90a24ec889aed" class="m-dox-self" name="a876de7e3fb4b6611e0a90a24ec889aed">version</a>(</span><span class="m-dox-wrap">) const -&gt; <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a></span>
+            </dt>
+            <dd>Getter for the version of the wrapped function&#x27;s origin (module or backend)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a973dd85d7e1f3b57c3eb98030a8cf237" class="m-dox-self" name="a973dd85d7e1f3b57c3eb98030a8cf237">safe_version</a>(</span><span class="m-dox-wrap">) const -&gt; <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for the &#x27;safe&#x27; incarnation of the version of the wrapped function&#x27;s origin (module or backend)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a2ba190773faaf6e644d74ab24c709d2a" class="m-dox">status</a>(</span><span class="m-dox-wrap">) const -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a7be700dee4f9d9cc5a9efaa0ff2cbab0" class="m-dox-self" name="a7be700dee4f9d9cc5a9efaa0ff2cbab0">quantity</a>(</span><span class="m-dox-wrap">) const -&gt; <a href="namespaceGambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a></span>
+            </dt>
+            <dd>Getter for the overall quantity provided by the wrapped function (capability-type pair)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#aec5300fbdb253cd9a09edffbfdafb526" class="m-dox-self" name="aec5300fbdb253cd9a09edffbfdafb526">purpose</a>(</span><span class="m-dox-wrap">) const -&gt; <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a></span>
+            </dt>
+            <dd>Getter for purpose (relevant for output nodes, aka helper structures for the dep. resolution)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a94892ac8fa2e37f15cab798bbd189bcb" class="m-dox-self" name="a94892ac8fa2e37f15cab798bbd189bcb">vertexID</a>(</span><span class="m-dox-wrap">) const -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a></span>
+            </dt>
+            <dd>Getter for vertex ID.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ad33185ce2c0ff77e0e14e4606d8efa1a" class="m-dox-self" name="ad33185ce2c0ff77e0e14e4606d8efa1a">timingVertexID</a>(</span><span class="m-dox-wrap">) const -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a></span>
+            </dt>
+            <dd>Getter for timing vertex ID.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ad058829b78226cf3b0dcb310a4668256" class="m-dox">label</a>(</span><span class="m-dox-wrap">) const -&gt; <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a></span>
+            </dt>
+            <dd>Getter for string label.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#afec52bd9d7b3fb3a83cece403d48626b" class="m-dox-self" name="afec52bd9d7b3fb3a83cece403d48626b">timingLabel</a>(</span><span class="m-dox-wrap">) const -&gt; <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a></span>
+            </dt>
+            <dd>Getter for the printer timing label.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a9c2a14819589380ff81cc3b1b2a9d78a" class="m-dox-self" name="a9c2a14819589380ff81cc3b1b2a9d78a">requiresPrinting</a>(</span><span class="m-dox-wrap">) const -&gt; bool <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter indicating if the wrapped function&#x27;s result should to be printed.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a5d1ae4ff6f5e0be7e16fb15938d9387f" class="m-dox-self" name="a5d1ae4ff6f5e0be7e16fb15938d9387f">requiresTimingPrinting</a>(</span><span class="m-dox-wrap">) const -&gt; bool <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter indicating if the timing data for this function&#x27;s execution should be printed.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ae47ce614bb3ebb36fb24a60a115de3d2" class="m-dox-self" name="ae47ce614bb3ebb36fb24a60a115de3d2">setPrintRequirement</a>(</span><span class="m-dox-wrap">bool) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Setter for indicating if the wrapped function&#x27;s result should to be printed.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ade7117c926fd3e16594a8a38aa41479f" class="m-dox">setTimingPrintRequirement</a>(</span><span class="m-dox-wrap">bool) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Setter for indicating if the timing data for this function&#x27;s execution should be printed.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#aa41e9c1faeae10fe689fb55d6681b849" class="m-dox-self" name="aa41e9c1faeae10fe689fb55d6681b849">setNestedList</a>(</span><span class="m-dox-wrap">std::vector&lt;<a href="classGambit_1_1functor.html" class="m-dox">functor</a>*&gt;&amp;) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Set the ordered list of pointers to other functors that should run nested in a loop managed by this one.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a80c9104d6d5d7a7b8af078f50b06c5f4" class="m-dox-self" name="a80c9104d6d5d7a7b8af078f50b06c5f4">setIteration</a>(</span><span class="m-dox-wrap">long long) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Set the iteration number in a loop in which this functor runs.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ac271e5cc6323f96fbd9aeb3ba8ba3bab" class="m-dox-self" name="ac271e5cc6323f96fbd9aeb3ba8ba3bab">canBeLoopManager</a>(</span><span class="m-dox-wrap">) -&gt; bool <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for revealing whether this is permitted to be a manager functor.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a8605c698d5d7e55b8a2bd47af9c466cb" class="m-dox-self" name="a8605c698d5d7e55b8a2bd47af9c466cb">loopManagerCapability</a>(</span><span class="m-dox-wrap">) -&gt; <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for revealing the required capability of the wrapped function&#x27;s loop manager.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a259892482655c006e7f278bbdcb837a1" class="m-dox-self" name="a259892482655c006e7f278bbdcb837a1">loopManagerName</a>(</span><span class="m-dox-wrap">) -&gt; <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for revealing the name of the wrapped function&#x27;s assigned loop manager.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a3cc77fbfc1442a29d6453da3add9acf3" class="m-dox-self" name="a3cc77fbfc1442a29d6453da3add9acf3">loopManagerOrigin</a>(</span><span class="m-dox-wrap">) -&gt; <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for revealing the module of the wrapped function&#x27;s assigned loop manager.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a0d6a72d8be5c5225840ca3aee362cf15" class="m-dox-self" name="a0d6a72d8be5c5225840ca3aee362cf15">breakLoop</a>(</span><span class="m-dox-wrap">) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Tell the functor that the loop it manages should break now.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ac518c00bed9dd3d570e0026439b2dfc2" class="m-dox-self" name="ac518c00bed9dd3d570e0026439b2dfc2">dependencies</a>(</span><span class="m-dox-wrap">) -&gt; std::set&lt;<a href="namespaceGambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing currently activated dependencies.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a4b4ee671e729c3cf346d32c152e09451" class="m-dox-self" name="a4b4ee671e729c3cf346d32c152e09451">backendgroups</a>(</span><span class="m-dox-wrap">) -&gt; std::set&lt;<a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing backend requirement groups.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#afe9c4e74bd8b8a44d155a6e40a972d4c" class="m-dox-self" name="afe9c4e74bd8b8a44d155a6e40a972d4c">backendreqs</a>(</span><span class="m-dox-wrap">) -&gt; std::set&lt;<a href="namespaceGambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing all backend requirements.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#af420350fc2c964e8ecedb39cad40ebae" class="m-dox-self" name="af420350fc2c964e8ecedb39cad40ebae">backendreqs</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>) -&gt; std::set&lt;<a href="namespaceGambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing backend requirements from a specific group.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a1554bbdfe8007dc433aa15a4c6ba866a" class="m-dox-self" name="a1554bbdfe8007dc433aa15a4c6ba866a">backendspermitted</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>) -&gt; std::set&lt;<a href="namespaceGambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing permitted backends.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a835e69ea8a95282d6381c2a5730b7d2d" class="m-dox-self" name="a835e69ea8a95282d6381c2a5730b7d2d">backendreq_tags</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>) -&gt; std::set&lt;<a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing tags associated with backend requirements.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a9b780439992b245c1942c01151052942" class="m-dox-self" name="a9b780439992b245c1942c01151052942">forcematchingbackend</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>) -&gt; std::set&lt;<a href="namespaceGambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing backend requirements that must be resolved from the same backend.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a05f0d4edd01eedd5b66d344977ec11d9" class="m-dox-self" name="a05f0d4edd01eedd5b66d344977ec11d9">backend_conditional_dependencies</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>,
+              <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>) -&gt; std::set&lt;<a href="namespaceGambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing backend-specific conditional dependencies (4-string version)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a58b95cb38cbdb73acec3dd3bd76c3242" class="m-dox-self" name="a58b95cb38cbdb73acec3dd3bd76c3242">backend_conditional_dependencies</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> req,
+              <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> type,
+              <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> be) -&gt; std::set&lt;<a href="namespaceGambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for backend-specific conditional dependencies (3-string version)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a5b0966dbd47cdaf1dde6caea70701db4" class="m-dox-self" name="a5b0966dbd47cdaf1dde6caea70701db4">backend_conditional_dependencies</a>(</span><span class="m-dox-wrap"><a href="classGambit_1_1functor.html" class="m-dox">functor</a>*) -&gt; std::set&lt;<a href="namespaceGambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for backend-specific conditional dependencies (backend functor pointer version)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#aca3ff18371ef2f272aa011207a2015a0" class="m-dox-self" name="aca3ff18371ef2f272aa011207a2015a0">model_conditional_dependencies</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>) -&gt; std::set&lt;<a href="namespaceGambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing model-specific conditional dependencies.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a54676e855d38746e897ac7bfcf713310" class="m-dox-self" name="a54676e855d38746e897ac7bfcf713310">model_conditional_backend_reqs</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>) -&gt; std::set&lt;<a href="namespaceGambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt; <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Getter for listing model-specific conditional backend requirements.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#aec1193154572515f633a20dbeb404482" class="m-dox-self" name="aec1193154572515f633a20dbeb404482">resolveDependency</a>(</span><span class="m-dox-wrap"><a href="classGambit_1_1functor.html" class="m-dox">functor</a>*) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Resolve a dependency using a pointer to another functor object.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#acd3f9e9d487ab066a0741a12d2e91b08" class="m-dox-self" name="acd3f9e9d487ab066a0741a12d2e91b08">resolveLoopManager</a>(</span><span class="m-dox-wrap"><a href="classGambit_1_1functor.html" class="m-dox">functor</a>*) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Set this functor&#x27;s loop manager (if it has one)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a122745e3d3c9d9521b95e7a665d43abf" class="m-dox-self" name="a122745e3d3c9d9521b95e7a665d43abf">resolveBackendReq</a>(</span><span class="m-dox-wrap"><a href="classGambit_1_1functor.html" class="m-dox">functor</a>*) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Resolve a backend requirement using a pointer to another functor object.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a92362795019e710f079b9613be971e4f" class="m-dox">notifyOfModel</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Notify the functor that a certain model is being scanned, so that it can activate itself accordingly.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a55331421e9520337170079c18eaa88c7" class="m-dox-self" name="a55331421e9520337170079c18eaa88c7">notifyOfBackends</a>(</span><span class="m-dox-wrap">std::map&lt;<a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>, std::set&lt;<a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt;&gt;) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Indicate to the functor which backends are actually loaded and working.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a9ad7a0b7c132a040c5801b85c139f241" class="m-dox">print</a>(</span><span class="m-dox-wrap"><a href="classGambit_1_1Printers_1_1BasePrinter.html" class="m-dox">Printers::<wbr />BasePrinter</a>* printer,
+              const <a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a> pointID,
+              <a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a> thread_num) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Printer function.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#abe4ec31bb94bcdb0b9ab876ae6187e8a" class="m-dox-self" name="abe4ec31bb94bcdb0b9ab876ae6187e8a">print</a>(</span><span class="m-dox-wrap"><a href="classGambit_1_1Printers_1_1BasePrinter.html" class="m-dox">Printers::<wbr />BasePrinter</a>* printer,
+              const <a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a> pointID) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Printer function (no-thread-index short-circuit)</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#af8cb02a4a7aba6a4563bb5c358059f6a" class="m-dox-self" name="af8cb02a4a7aba6a4563bb5c358059f6a">retrieve_invalid_point_exception</a>(</span><span class="m-dox-wrap">) -&gt; <a href="classGambit_1_1invalid__point__exception.html" class="m-dox">invalid_<wbr />point_<wbr />exception</a>* <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Retrieve the previously saved exception generated when this functor invalidated the current point in model space.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a52331ed1165075f4f5c8060cf4d95f03" class="m-dox">notifyOfIniOptions</a>(</span><span class="m-dox-wrap">const <a href="classGambit_1_1Options.html" class="m-dox">Options</a>&amp;) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename TYPE&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="#ab42c0faae1334f0e4aec38fa6dc2c3b2" class="m-dox-self" name="ab42c0faae1334f0e4aec38fa6dc2c3b2">setOption</a>(</span><span class="m-dox-wrap">const <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&amp; key,
+              const TYPE val) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Set an option for the functor directly (for use in standalone executables).</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#aec86679016ed6a9a1ad2f20c1e3383e9" class="m-dox-self" name="aec86679016ed6a9a1ad2f20c1e3383e9">getOptions</a>(</span><span class="m-dox-wrap">) -&gt; <a href="classGambit_1_1safe__ptr.html" class="m-dox">safe_<wbr />ptr</a>&lt;<a href="classGambit_1_1Options.html" class="m-dox">Options</a>&gt;</span>
+            </dt>
+            <dd>Return a safe pointer to the options that this functor is supposed to run with (e.g. from the ini file).</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a5f45ff02d2e4209dfb81bcb9ace3fb74" class="m-dox-self" name="a5f45ff02d2e4209dfb81bcb9ace3fb74">allModelsAllowed</a>(</span><span class="m-dox-wrap">) -&gt; bool</span>
+            </dt>
+            <dd>Test whether the functor is allowed to be used with all models.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a961f601d1b7072be456f16a74a973a59" class="m-dox">modelAllowed</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> model) -&gt; bool</span>
+            </dt>
+            <dd>Test whether the functor is always allowed (either explicitly or implicitly) to be used with a given model.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ac089db4d75e7394e11530727bbade14e" class="m-dox">modelExplicitlyAllowed</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> model) -&gt; bool</span>
+            </dt>
+            <dd>Test whether the functor is explictly always allowed to be used with a given model.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#aa913b1602127b1115d211ad4dcafadfb" class="m-dox-self" name="aa913b1602127b1115d211ad4dcafadfb">setAllowedModel</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> model) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Add a model to the internal list of models for which this functor is allowed to be used.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#acfa856966c8346437fb99a746970336e" class="m-dox-self" name="acfa856966c8346437fb99a746970336e">modelComboAllowed</a>(</span><span class="m-dox-wrap">std::set&lt;<a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt; combo) -&gt; bool</span>
+            </dt>
+            <dd>Test whether the functor is allowed (either explicitly or implicitly) to be used with a given combination of models.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a828031c874c79018d35b710379cd32d2" class="m-dox-self" name="a828031c874c79018d35b710379cd32d2">modelComboExplicitlyAllowed</a>(</span><span class="m-dox-wrap">std::set&lt;<a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt; combo) -&gt; bool</span>
+            </dt>
+            <dd>Test whether the functor has been explictly allowed to be used with a given combination of models.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a36db93b4e79612e57f32fb807d427773" class="m-dox-self" name="a36db93b4e79612e57f32fb807d427773">setModelGroup</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> group,
+              <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> contents) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Add a model group definition to the internal list of model groups.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#abd0c5a0c01fe6b8188c4c12c136b3ebb" class="m-dox">setAllowedModelGroupCombo</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> groups) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Add a combination of model groups to the internal list of combinations for which this functor is allowed to be used.</dd>
+          </dl>
+        </section>
+        <section id="pro-static-methods">
+          <h2><a href="#pro-static-methods">Protected static functions</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper">static auto <a href="#a399d73c9f799c78274ad8715eec84d7b" class="m-dox-self" name="a399d73c9f799c78274ad8715eec84d7b">failBigTime</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> method) -&gt; <a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a></span>
+            </dt>
+            <dd>Attempt to retrieve a dependency or model parameter that has not been resolved.</dd>
+          </dl>
+        </section>
+        <section id="pro-methods">
+          <h2><a href="#pro-methods">Protected functions</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a782b9e5700d5cb8035abd400447c656c" class="m-dox-self" name="a782b9e5700d5cb8035abd400447c656c">allowed_parent_or_friend_exists</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> model) -&gt; bool</span>
+            </dt>
+            <dd>Test if there is a model in the functor&#x27;s allowedModels list as which this model can be interpreted.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a1f13657a8b3235a6645f9f5f65096972" class="m-dox-self" name="a1f13657a8b3235a6645f9f5f65096972">in_allowed_combo</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> model) -&gt; bool</span>
+            </dt>
+            <dd>Check that a model is actually part of a combination that is allowed to be used with this functor.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a86a00771d51c2f47765de71a8eb47de9" class="m-dox-self" name="a86a00771d51c2f47765de71a8eb47de9">contains_anything_interpretable_as_member_of</a>(</span><span class="m-dox-wrap">std::set&lt;<a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt; combo,
+              <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> group) -&gt; bool</span>
+            </dt>
+            <dd>Test whether any of the entries in a given model group is a valid interpretation of any members in a given combination.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a160a2a34aa257a5683bd9d236d05499e" class="m-dox-self" name="a160a2a34aa257a5683bd9d236d05499e">has_common_elements</a>(</span><span class="m-dox-wrap">std::set&lt;<a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt; combo,
+              <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> group) -&gt; bool</span>
+            </dt>
+            <dd>Work out whether a given combination of models and a model group have any elements in common.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a1102b665dfdd1e1c199bdf617ab43176" class="m-dox">find_friend_or_parent_model_in_map</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> model,
+              std::map&lt;<a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>, std::set&lt;<a href="namespaceGambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt;&gt; karta) -&gt; <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a></span>
+            </dt>
+            <dd>Try to find a parent or friend model in some user-supplied map from models to sspair vectors.</dd>
+          </dl>
+        </section>
+        <section id="pro-attribs">
+          <h2><a href="#pro-attribs">Protected variables</a></h2>
+          <dl class="m-dox">
+            <dt><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> <a href="#ad9345bebb312d0352f8576d57b326759" class="m-dox-self" name="ad9345bebb312d0352f8576d57b326759">myName</a></dt>
+            <dd>Internal storage of the function name.</dd>
+            <dt><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> <a href="#ab8e599294e315beb4df8154b6e7ba499" class="m-dox-self" name="ab8e599294e315beb4df8154b6e7ba499">myCapability</a></dt>
+            <dd>Internal storage of exactly what the function calculates.</dd>
+            <dt><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> <a href="#a799a78be10d270a75bf1c3881178daab" class="m-dox-self" name="a799a78be10d270a75bf1c3881178daab">myType</a></dt>
+            <dd>Internal storage of the type of what the function calculates.</dd>
+            <dt><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> <a href="#a0a323ed83c7025b6d789e7fac64addc7" class="m-dox-self" name="a0a323ed83c7025b6d789e7fac64addc7">myOrigin</a></dt>
+            <dd>Internal storage of the name of the module or backend to which the function belongs.</dd>
+            <dt><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> <a href="#a4de522a9d806a77959580b9a21c922d4" class="m-dox-self" name="a4de522a9d806a77959580b9a21c922d4">myVersion</a></dt>
+            <dd>Internal storage of the version of the module or backend to which the function belongs.</dd>
+            <dt><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> <a href="#ac061cc96139bf564778406ecc67cc0a9" class="m-dox-self" name="ac061cc96139bf564778406ecc67cc0a9">myPurpose</a></dt>
+            <dd>Purpose of the function (relevant for output and next-to-output functors)</dd>
+            <dt>const <a href="classGambit_1_1Models_1_1ModelFunctorClaw.html" class="m-dox">Models::<wbr />ModelFunctorClaw</a>* <a href="#a7f185782b166c86c8c1488e3e28966d2" class="m-dox-self" name="a7f185782b166c86c8c1488e3e28966d2">myClaw</a></dt>
+            <dd>Bound model functor claw, for checking relationships between models.</dd>
+            <dt>const <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> <a href="#a55aa9ef92692ece18544675da08ef49e" class="m-dox-self" name="a55aa9ef92692ece18544675da08ef49e">myLabel</a></dt>
+            <dd>String label, used to label functor results for printer system.</dd>
+            <dt>const <a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> <a href="#a8ce50c7d7fcf5afa751b258895dd6dad" class="m-dox-self" name="a8ce50c7d7fcf5afa751b258895dd6dad">myTimingLabel</a></dt>
+            <dd>String label, used to label functor timing data for printer system.</dd>
+            <dt><a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a> <a href="#a41bf64d7ddcd9ee48ef849344a803b55" class="m-dox">myStatus</a></dt>
+            <dd></dd>
+            <dt><a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a> <a href="#a004751aadc8af70cdb28fa25ba661f76" class="m-dox-self" name="a004751aadc8af70cdb28fa25ba661f76">myVertexID</a></dt>
+            <dd>Internal storage of the vertex ID number used by the printer system to identify functors.</dd>
+            <dt><a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a> <a href="#a9501f612101222191ac4eb41c5ef91af" class="m-dox-self" name="a9501f612101222191ac4eb41c5ef91af">myTimingVertexID</a></dt>
+            <dd>ID assigned by printers to the timing data output stream.</dd>
+            <dt>bool <a href="#a3d9cf03cce51e7e134bbe1d7dcf37541" class="m-dox-self" name="a3d9cf03cce51e7e134bbe1d7dcf37541">verbose</a></dt>
+            <dd>Debug flag.</dd>
+            <dt><a href="classGambit_1_1Options.html" class="m-dox">Options</a> <a href="#a7cc789adf4e03cd04865f3c85d0ec42b" class="m-dox-self" name="a7cc789adf4e03cd04865f3c85d0ec42b">myOptions</a></dt>
+            <dd>Internal storage of function options, as a <a href="namespaceYAML.html" class="m-dox">YAML</a> node.</dd>
+            <dt>std::set&lt;<a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt; <a href="#ac70ec922e8a3f04f6878ffafc231e379" class="m-dox-self" name="ac70ec922e8a3f04f6878ffafc231e379">allowedModels</a></dt>
+            <dd>List of allowed models.</dd>
+            <dt>std::set&lt;std::set&lt;<a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt;&gt; <a href="#a4f73fb1475364081fa23944b7c95c7b3" class="m-dox-self" name="a4f73fb1475364081fa23944b7c95c7b3">allowedGroupCombos</a></dt>
+            <dd>List of allowed model group combinations.</dd>
+            <dt>std::map&lt;<a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>, std::set&lt;<a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>&gt;&gt; <a href="#a6149708cf859ce1290dd447f16291e8b" class="m-dox-self" name="a6149708cf859ce1290dd447f16291e8b">modelGroups</a></dt>
+            <dd>Map from model group names to group contents.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-dox-details" id="aa5b8e133948384570684245abcd0a137"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper"><a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> Gambit::<wbr />functor::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#aa5b8e133948384570684245abcd0a137" class="m-dox-self">setStatus</a>(</span><span class="m-dox-wrap"><a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a>)</span></span>
+            </h3>
+<p>Setter for status: -5 = required external tool absent (Mathematica) -4 = required backend absent (backend ini functions) -3 = required classes absent -2 = function absent -1 = origin absent 0 = model incompatibility (default) 1 = available 2 = active</p><p>Setter for status: -4 = required backend absent (backend ini functions) -3 = required classes absent -2 = function absent -1 = origin absent 0 = model incompatibility (default) 1 = available 2 = active</p>
+          </div></section>
+          <section class="m-dox-details" id="aa3672cd13d12ba53572d7b40bb74121e"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper"><a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> Gambit::<wbr />functor::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#aa3672cd13d12ba53572d7b40bb74121e" class="m-dox-self">setTimingVertexID</a>(</span><span class="m-dox-wrap"><a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a>)</span></span>
+            </h3>
+            <p>Set ID for timing &#x27;vertex&#x27; (used in printer system)</p>
+<p>Acquire ID for timing &#x27;vertex&#x27; (used in printer system)</p>
+          </div></section>
+          <section class="m-dox-details" id="a2ba190773faaf6e644d74ab24c709d2a"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper"><a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a> Gambit::<wbr />functor::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a2ba190773faaf6e644d74ab24c709d2a" class="m-dox-self">status</a>(</span><span class="m-dox-wrap">) const</span></span>
+            </h3>
+<p>Getter for the wrapped function current status: -4 = required backend absent (backend ini functions) -3 = required classes absent -2 = function absent -1 = origin absent 0 = model incompatibility (default) 1 = available 2 = active</p>
+          </div></section>
+          <section class="m-dox-details" id="ad058829b78226cf3b0dcb310a4668256"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> Gambit::<wbr />functor::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#ad058829b78226cf3b0dcb310a4668256" class="m-dox-self">label</a>(</span><span class="m-dox-wrap">) const</span></span>
+            </h3>
+            <p>Getter for string label.</p>
+<p>Getter for the printer label.</p>
+          </div></section>
+          <section class="m-dox-details" id="ade7117c926fd3e16594a8a38aa41479f"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper"><a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> Gambit::<wbr />functor::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#ade7117c926fd3e16594a8a38aa41479f" class="m-dox-self">setTimingPrintRequirement</a>(</span><span class="m-dox-wrap">bool) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Setter for indicating if the timing data for this function&#x27;s execution should be printed.</p>
+<p>Setter for indicating if the timing data for this functor should be printed.</p>
+          </div></section>
+          <section class="m-dox-details" id="a92362795019e710f079b9613be971e4f"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper"><a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> Gambit::<wbr />functor::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a92362795019e710f079b9613be971e4f" class="m-dox-self">notifyOfModel</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Notify the functor that a certain model is being scanned, so that it can activate itself accordingly.</p>
+<p>Notify the functor that a certain model is being scanned, so that it can activate its dependencies accordingly.</p>
+          </div></section>
+          <section class="m-dox-details" id="a9ad7a0b7c132a040c5801b85c139f241"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper"><a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> Gambit::<wbr />functor::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a9ad7a0b7c132a040c5801b85c139f241" class="m-dox-self">print</a>(</span><span class="m-dox-wrap"><a href="classGambit_1_1Printers_1_1BasePrinter.html" class="m-dox">Printers::<wbr />BasePrinter</a>* printer,
+              const <a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a> pointID,
+              <a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a> thread_num) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Printer function.</p>
+<p>Print function.</p>
+          </div></section>
+          <section class="m-dox-details" id="a52331ed1165075f4f5c8060cf4d95f03"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper"><a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> Gambit::<wbr />functor::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a52331ed1165075f4f5c8060cf4d95f03" class="m-dox-self">notifyOfIniOptions</a>(</span><span class="m-dox-wrap">const <a href="classGambit_1_1Options.html" class="m-dox">Options</a>&amp;)</span></span>
+            </h3>
+<p>Notify the functor about an instance of the options class that contains information from its corresponding ini-file entry in the auxiliaries or observables section.</p>
+          </div></section>
+          <section class="m-dox-details" id="a961f601d1b7072be456f16a74a973a59"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">bool Gambit::<wbr />functor::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a961f601d1b7072be456f16a74a973a59" class="m-dox-self">modelAllowed</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> model)</span></span>
+            </h3>
+            <p>Test whether the functor is always allowed (either explicitly or implicitly) to be used with a given model.</p>
+<p>Test whether the functor is allowed (either explicitly or implicitly) to be used with a given model.</p>
+          </div></section>
+          <section class="m-dox-details" id="ac089db4d75e7394e11530727bbade14e"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">bool Gambit::<wbr />functor::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#ac089db4d75e7394e11530727bbade14e" class="m-dox-self">modelExplicitlyAllowed</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> model)</span></span>
+            </h3>
+            <p>Test whether the functor is explictly always allowed to be used with a given model.</p>
+<p>Test whether the functor has been explictly allowed to be used with a given model.</p>
+          </div></section>
+          <section class="m-dox-details" id="abd0c5a0c01fe6b8188c4c12c136b3ebb"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper"><a href="SpecBit__MSSM__rollcall_8hpp.html#a086e47bc9eaae254684036fdfe50fd86" class="m-dox">void</a> Gambit::<wbr />functor::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#abd0c5a0c01fe6b8188c4c12c136b3ebb" class="m-dox-self">setAllowedModelGroupCombo</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> groups)</span></span>
+            </h3>
+            <p>Add a combination of model groups to the internal list of combinations for which this functor is allowed to be used.</p>
+<p>Add a model group combination to the internal list of combinations for which this functor is allowed to be used.</p>
+          </div></section>
+          <section class="m-dox-details" id="a1102b665dfdd1e1c199bdf617ab43176"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> Gambit::<wbr />functor::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a1102b665dfdd1e1c199bdf617ab43176" class="m-dox-self">find_friend_or_parent_model_in_map</a>(</span><span class="m-dox-wrap"><a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a> model,
+              std::map&lt;<a href="namespaceGambit.html#aff3f41b9e6112a6d471a03b2df1f2427" class="m-dox">str</a>, std::set&lt;<a href="namespaceGambit.html#a02fb1a27cb798b8333a50eb29b32c0a7" class="m-dox">sspair</a>&gt;&gt; karta) <span class="m-label m-warning">protected</span></span></span>
+            </h3>
+            <p>Try to find a parent or friend model in some user-supplied map from models to sspair vectors.</p>
+<p>Try to find a parent or friend model in some user-supplied map from models to sspair vectors Preferentially returns the &#x27;least removed&#x27; parent or friend, i.e. less steps back in the model lineage.</p>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-dox-details" id="a41bf64d7ddcd9ee48ef849344a803b55"><div>
+            <h3>
+              <a href="SpecBit__MSSM__rollcall_8hpp.html#ad625eae36933422107ca00e0fed47523" class="m-dox">int</a> Gambit::<wbr />functor::<wbr /><a href="#a41bf64d7ddcd9ee48ef849344a803b55" class="m-dox-self">myStatus</a> <span class="m-label m-warning">protected</span>
+            </h3>
+<p>Status: -4 = required backend absent (backend ini functions) -3 = required classes absent -2 = function absent -1 = origin absent 0 = model incompatibility (default) 1 = available 2 = active</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-dox-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-dox-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-dox-search-content">
+          <input type="search" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" />
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            Search for symbols, directories, files, pages or modules. You can omit any
+            prefix from the symbol or file path; adding a <code>:</code> or <code>/</code>
+            suffix lists all members of given symbol or directory. Navigate through the
+            list using <span class="m-label m-dim">&darr;</span> and
+            <span class="m-label m-dim">&uarr;</span>, press
+            <span class="m-label m-dim">Enter</span> to go.
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search.js"></script>
+<script src="searchdata.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>GAMBIT : The Global And Modular BSM Inference Tool. Created by <a href="http://doxygen.org/">Doxygen</a> 1.8.15 and <a href="http://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

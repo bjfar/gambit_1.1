@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gambit::ColliderBit::SignalRegionData struct | GAMBIT : The Global And Modular BSM Inference Tool</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700,700i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-gambit+doxygen.compiled.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">GAMBIT <span class="m-thin">: The Global And Modular BSM Inference Tool</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-dox-search-icon" title="Search" onclick="return showSearch()"><svg viewBox="0 0 16 16">
+          <path d="m6 0c-3.3144 0-6 2.6856-6 6 0 3.3144 2.6856 6 6 6 1.4858 0 2.8463-0.54083 3.8945-1.4355-0.0164 0.33797 0.14734 0.75854 0.5 1.1504l3.2227 3.7891c0.55185 0.6139 1.4517 0.66544 2.002 0.11524 0.55022-0.55022 0.49866-1.4501-0.11524-2.002l-3.7891-3.2246c-0.39184-0.35266-0.81242-0.51469-1.1504-0.5 0.89472-1.0482 1.4355-2.4088 1.4355-3.8945 0-3.3128-2.6856-5.998-6-5.998zm0 1.5625a4.4375 4.4375 0 0 1 4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375-4.4375 4.4375 4.4375 0 0 1 4.4375-4.4375z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-dox-search-icon" title="Search" onclick="return showSearch()"><svg viewBox="0 0 16 16">
+              <path d="m6 0c-3.3144 0-6 2.6856-6 6 0 3.3144 2.6856 6 6 6 1.4858 0 2.8463-0.54083 3.8945-1.4355-0.0164 0.33797 0.14734 0.75854 0.5 1.1504l3.2227 3.7891c0.55185 0.6139 1.4517 0.66544 2.002 0.11524 0.55022-0.55022 0.49866-1.4501-0.11524-2.002l-3.7891-3.2246c-0.39184-0.35266-0.81242-0.51469-1.1504-0.5 0.89472-1.0482 1.4355-2.4088 1.4355-3.8945 0-3.3128-2.6856-5.998-6-5.998zm0 1.5625a4.4375 4.4375 0 0 1 4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375-4.4375 4.4375 4.4375 0 0 1 4.4375-4.4375z"/>
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespaceGambit.html">Gambit</a>::</span><span class="m-breadcrumb"><a href="namespaceGambit_1_1ColliderBit.html">ColliderBit</a>::</span>SignalRegionData <span class="m-thin">struct</span>
+        </h1>
+        <p>A simple container for the result of one signal region from one analysis.</p>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#analysis-and-signal-region-specification">Analysis and signal region specification</a></li>
+                <li><a href="#signal-region-data">Signal region data</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#a28bada0c800fe24afdd9e87430d046c2" class="m-dox-self" name="a28bada0c800fe24afdd9e87430d046c2">SignalRegionData</a>(</span><span class="m-dox-wrap">const std::string&amp; name,
+              const std::string&amp; sr,
+              <a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> nobs,
+              std::pair&lt;<a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a>, <a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a>&gt; nsig,
+              std::pair&lt;<a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a>, <a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a>&gt; nbkg,
+              <a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> nsigatlumi = -1)</span>
+            </dt>
+            <dd>Constructor with {n,nsys} pair args.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#a042b11ee0740f4af09a6dc1a187b7561" class="m-dox-self" name="a042b11ee0740f4af09a6dc1a187b7561">SignalRegionData</a>(</span><span class="m-dox-wrap">const std::string&amp; name,
+              const std::string&amp; sr,
+              <a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> nobs,
+              <a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> nsig,
+              <a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> nbkg,
+              <a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> syssig,
+              <a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> sysbkg,
+              <a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> nsigatlumi = -1)</span>
+            </dt>
+            <dd>Constructor with separate n &amp; nsys args.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#a90360f9775c95934485f388d904e50e3" class="m-dox-self" name="a90360f9775c95934485f388d904e50e3">SignalRegionData</a>(</span><span class="m-dox-wrap">)</span>
+            </dt>
+            <dd>Default constructor.</dd>
+          </dl>
+        </section>
+        <section id="analysis-and-signal-region-specification">
+          <h2><a href="#analysis-and-signal-region-specification">Analysis and signal region specification</a></h2>
+          <dl class="m-dox">
+            <dt>std::string <a href="#a427da86fbca7f225cf9a10fae5dedc52" class="m-dox-self" name="a427da86fbca7f225cf9a10fae5dedc52">analysis_name</a></dt>
+            <dd>The name of the analysis common to all signal regions.</dd>
+            <dt>std::string <a href="#a398a8f3147eb9c471547ffb201213f57" class="m-dox-self" name="a398a8f3147eb9c471547ffb201213f57">sr_label</a></dt>
+            <dd>A label for the particular signal region of the analysis.</dd>
+          </dl>
+        </section>
+        <section id="signal-region-data">
+          <h2><a href="#signal-region-data">Signal region data</a></h2>
+          <dl class="m-dox">
+            <dt><a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> <a href="#a22757ee926c1445ee2d31c6060ed5d94" class="m-dox-self" name="a22757ee926c1445ee2d31c6060ed5d94">n_observed</a></dt>
+            <dd>The number of events passing selection for this signal region as reported by the experiment.</dd>
+            <dt><a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> <a href="#a8add8c286f5e4cbe89fc0dd71f729ef0" class="m-dox-self" name="a8add8c286f5e4cbe89fc0dd71f729ef0">n_signal</a></dt>
+            <dd>The number of simulated model events passing selection for this signal region.</dd>
+            <dt><a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> <a href="#a9dc523832ad3b76af92dc9846f63506a" class="m-dox-self" name="a9dc523832ad3b76af92dc9846f63506a">n_signal_at_lumi</a></dt>
+            <dd>n_signal, scaled to the experimental luminosity</dd>
+            <dt><a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> <a href="#a131f56555ba3c503026e05a62d2c82ad" class="m-dox-self" name="a131f56555ba3c503026e05a62d2c82ad">n_background</a></dt>
+            <dd>The number of standard model events expected to pass the selection for this signal region, as reported by the experiment.</dd>
+            <dt><a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> <a href="#ab7808e651210ba0dc4490b22d5fb6933" class="m-dox-self" name="ab7808e651210ba0dc4490b22d5fb6933">signal_sys</a></dt>
+            <dd>The absolute systematic error of n_signal.</dd>
+            <dt><a href="SpecBit__tests__rollcall_8hpp.html#a45c855d65dd0e2b57b08024500ff9159" class="m-dox">double</a> <a href="#af69f7071956f83772ce6ec509e1f3d57" class="m-dox-self" name="af69f7071956f83772ce6ec509e1f3d57">background_sys</a></dt>
+            <dd>The absolute systematic error of n_background.</dd>
+          </dl>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-dox-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-dox-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-dox-search-content">
+          <input type="search" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" />
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            Search for symbols, directories, files, pages or modules. You can omit any
+            prefix from the symbol or file path; adding a <code>:</code> or <code>/</code>
+            suffix lists all members of given symbol or directory. Navigate through the
+            list using <span class="m-label m-dim">&darr;</span> and
+            <span class="m-label m-dim">&uarr;</span>, press
+            <span class="m-label m-dim">Enter</span> to go.
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search.js"></script>
+<script src="searchdata.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>GAMBIT : The Global And Modular BSM Inference Tool. Created by <a href="http://doxygen.org/">Doxygen</a> 1.8.15 and <a href="http://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>
